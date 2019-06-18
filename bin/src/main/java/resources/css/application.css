@@ -1,0 +1,8 @@
+    #main_screen{
+        -fx-background-image: url("main_screen.jpg");
+    }
+    
+    #horizontal_window{
+    	-fx-background-image: url("horizontal_window.png");
+    	-fx-background-size: contain;
+    }

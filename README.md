@@ -1,2 +1,0 @@
-# MagicMazeOnline
-hsleiden
