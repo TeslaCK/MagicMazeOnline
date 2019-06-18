@@ -2,7 +2,7 @@
 import java.util.*;
 
 /**
- * 
+ *
  */
 public class TileControler {
 
@@ -13,7 +13,7 @@ public class TileControler {
     }
 
     /**
-     * 
+     *
      */
     public void TileID;
 

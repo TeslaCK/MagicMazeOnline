@@ -2,14 +2,14 @@
 import java.util.*;
 
 /**
- * 
+ *
  */
-public class CharacterControler {
+public class CharacterController {
 
     /**
      * Default constructor
      */
-    public CharacterControler() {
+    public CharacterController() {
     }
 
 
@@ -17,21 +17,21 @@ public class CharacterControler {
 
 
     /**
-     * 
+     *
      */
     public void isCharacterOccupied() {
         // TODO implement here
     }
 
     /**
-     * 
+     *
      */
     public void characterOccupied() {
         // TODO implement here
     }
 
     /**
-     * 
+     *
      */
     public void sendCharacterData() {
         // TODO implement here

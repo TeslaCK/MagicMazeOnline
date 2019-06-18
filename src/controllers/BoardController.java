@@ -2,14 +2,14 @@
 import java.util.*;
 
 /**
- * 
+ *
  */
-public class BoardControler {
+public class BoardController {
 
     /**
      * Default constructor
      */
-    public BoardControler() {
+    public BoardController() {
     }
 
 
@@ -19,14 +19,14 @@ public class BoardControler {
 
 
     /**
-     * 
+     *
      */
     public void characterClicked() {
         // TODO implement here
     }
 
     /**
-     * 
+     *
      */
     public void renderNewTile() {
         // TODO implement here

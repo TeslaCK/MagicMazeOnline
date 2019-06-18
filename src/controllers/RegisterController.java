@@ -2,21 +2,21 @@
 import java.util.*;
 
 /**
- * 
+ *
  */
-public class registerControler {
+public class RegisterController {
 
     /**
      * Default constructor
      */
-    public registerControler() {
+    public RegisterController() {
     }
 
 
 
 
     /**
-     * 
+     *
      */
     public void checkForExcistingUserName() {
         // TODO implement here

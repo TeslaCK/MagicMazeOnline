@@ -2,14 +2,14 @@
 import java.util.*;
 
 /**
- * 
+ *
  */
-public class RegisterView {
+public class PauzeMenuController {
 
     /**
      * Default constructor
      */
-    public RegisterView() {
+    public PauzeMenuController() {
     }
 
 

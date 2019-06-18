@@ -2,18 +2,15 @@
 import java.util.*;
 
 /**
- * 
+ *
  */
-public class MenuControler {
+public class MainMenuView {
 
     /**
      * Default constructor
      */
-    public MenuControler() {
+    public MainMenuView() {
     }
-
-
-
 
 
 
