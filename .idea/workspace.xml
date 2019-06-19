@@ -2,131 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34868645-64ea-4d68-86c3-13c315dca80b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/.project" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/doc/allclasses-frame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/doc/allclasses-noframe.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/doc/constant-values.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/doc/deprecated-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/doc/help-doc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/doc/index-files/index-1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/doc/index-files/index-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/doc/index-files/index-3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/doc/index-files/index-4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/doc/index-files/index-5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/doc/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/doc/overview-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/doc/package-list" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/doc/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/doc/services/FirebaseService.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/doc/services/class-use/FirebaseService.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/doc/services/package-frame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/doc/services/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/doc/services/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/doc/services/package-use.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/doc/stylesheet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/src/main/java/configurations/ServiceAccountKey.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/src/main/java/resources/css/application.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/src/main/java/resources/css/main_screen.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/src/test/java/nl/hsleiden/iipsen15/Century/application.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/target/classes/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/target/classes/configurations/ServiceAccountKey.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/target/test-classes/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/allclasses-frame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/allclasses-noframe.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/constant-values.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/deprecated-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/help-doc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/index-files/index-1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/index-files/index-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/index-files/index-3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/index-files/index-4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/index-files/index-5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/overview-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/package-list" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/services/FirebaseService.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/services/class-use/FirebaseService.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/services/package-frame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/services/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/services/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/services/package-use.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/stylesheet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/application/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/configurations/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/configurations/magicmaze-74bf0-firebase-adminsdk-0igqh-0b042ffbf0.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/BoardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/GameController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/LobbyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/PlayerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/SceneManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/CharacterModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/GameBoardModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/GameModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/LobbyModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Model.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/PlayerModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/resources/css/application.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/FirebaseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shared/Observable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shared/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/views/BoardView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/views/CreateOrJoinLobbyView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/views/GameView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/views/JoinLobbyView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/views/LobbyView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/views/LoginAndRegisterView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/views/LoginOrRegisterView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/views/PlayerView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/views/View.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/nl/hsleiden/iipsen16/MagicMaze/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/nl/hsleiden/iipsen16/MagicMaze/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/nl/hsleiden/iipsen16/MagicMaze/application.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/MagicMaze.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/configurations/Database.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/controllers/BoardController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/controllers/Controller.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/controllers/GameController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/controllers/LobbyController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/controllers/PlayerController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/controllers/SceneManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/models/GameBoardModel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/models/GameModel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/models/LobbyModel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/models/Model.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/models/PlayerModel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/services/FirebaseService$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/services/FirebaseService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/shared/Observable.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/shared/Observer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/views/BoardView.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/views/CreateOrJoinLobbyView.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/views/GameView.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/views/JoinLobbyView.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/views/LobbyView$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/views/LobbyView.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/views/LoginAndRegisterView.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/views/LoginOrRegisterView.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/views/PlayerView.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/views/View.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/META-INF/MagicMaze.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/nl/hsleiden/iipsen16/MagicMaze/AppTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/nl/hsleiden/iipsen16/MagicMaze/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/resources/supportingClasses/Location.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/resources/supportingClasses/MoveSet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MagicMazeOnline.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/BoardController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/CharacterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/CharacterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/CharacterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/CharacterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/PlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/PlayerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/CharacterModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/CharacterModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/GameBoardModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/GameBoardModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/BoardController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/CharacterController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/PlayerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/models/CharacterModel.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -144,29 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controllers/CharacterController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="57" column="68" lean-forward="true" selection-start-line="57" selection-start-column="68" selection-end-line="57" selection-end-column="68" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/models/Model.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/models/CharacterModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+            <state relative-caret-position="418">
+              <caret line="95" column="40" selection-start-line="95" selection-start-column="40" selection-end-line="95" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -177,8 +43,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controllers/BoardController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
+            <state relative-caret-position="350">
+              <caret line="78" column="25" lean-forward="true" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/models/CharacterModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="56" column="7" lean-forward="true" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -187,10 +65,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/Controller.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/models/GameBoardModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            <state relative-caret-position="408">
+              <caret line="28" column="64" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -224,8 +105,12 @@
         <option value="$PROJECT_DIR$/src/views/MainMenuView.java" />
         <option value="$PROJECT_DIR$/src/main/java/configurations/Database.java" />
         <option value="$PROJECT_DIR$/src/controllers/BoardController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/BoardController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/PlayerController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resources/supportingClasses/MoveSet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resources/supportingClasses/Location.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/GameBoardModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/CharacterController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/BoardController.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/CharacterModel.java" />
       </list>
     </option>
@@ -257,6 +142,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -298,12 +185,35 @@
               <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="models" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
+            <path>
+              <item name="MagicMazeOnline" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="MagicMaze" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MagicMazeOnline" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="MagicMaze" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="supportingClasses" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MagicMazeOnline" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="MagicMaze" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="services" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -335,7 +245,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.resources in MagicMaze">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="application.Main" />
       <module name="MagicMaze" />
@@ -349,8 +259,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="resources in MagicMaze" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MagicMaze" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="resources.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="resources" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.resources in MagicMaze" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -369,12 +294,13 @@
       <workItem from="1560861450942" duration="342000" />
       <workItem from="1560861848959" duration="168000" />
       <workItem from="1560862038317" duration="17000" />
-      <workItem from="1560862152861" duration="3769000" />
+      <workItem from="1560862152861" duration="4003000" />
+      <workItem from="1560947430500" duration="4273000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6935000" />
+    <option name="totallyTimeSpent" value="11442000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -385,7 +311,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.26012793" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.26279318" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32936078" />
@@ -394,12 +320,12 @@
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.32936078" />
       <window_info anchor="right" id="Theme Preview" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -445,12 +371,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BoardControler.java" />
-    <entry file="file://$PROJECT_DIR$/src/views/BoardView.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CarracterControl.java" />
-    <entry file="file://$PROJECT_DIR$/CharacterControler.java" />
     <entry file="file://$PROJECT_DIR$/Class1.java" />
     <entry file="file://$PROJECT_DIR$/src/models/RegisterModel.java">
       <provider selected="true" editor-type-id="text-editor" />
@@ -535,13 +455,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/services/FirebaseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/configurations/magicmaze-74bf0-firebase-adminsdk-0igqh-0b042ffbf0.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -601,13 +514,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/BoardController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/BoardController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/SceneManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -629,13 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/GameController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-109">
@@ -643,13 +543,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/CharacterController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/PlayerModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="57" column="68" lean-forward="true" selection-start-line="57" selection-start-column="68" selection-end-line="57" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/PlayerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="45" selection-start-line="45" selection-end-line="52" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -660,10 +571,75 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/LobbyModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/supportingClasses/MoveSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/supportingClasses/Location.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#488#489#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/GameModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1894">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/services/FirebaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1404">
+          <caret line="140" column="1" lean-forward="true" selection-start-line="140" selection-start-column="1" selection-end-line="140" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/CharacterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="95" column="40" selection-start-line="95" selection-start-column="40" selection-end-line="95" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/BoardController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
+        <state relative-caret-position="350">
+          <caret line="78" column="25" lean-forward="true" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/GameBoardModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="28" column="64" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -672,8 +648,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/CharacterModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        <state relative-caret-position="248">
+          <caret line="56" column="7" lean-forward="true" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

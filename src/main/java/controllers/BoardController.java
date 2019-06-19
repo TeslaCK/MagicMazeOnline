@@ -2,7 +2,9 @@ package controllers;
 
 
 import com.google.cloud.firestore.DocumentSnapshot;
+import resources.supportingClasses.Location;
 import views.View;
+import resources.supportingClasses.MoveSet;
 
 /**
  * 
@@ -50,6 +52,34 @@ public class BoardController implements Controller{
      * @param occupied True for occupied, false if not occupied.
      */
     public void characterStatus(int characterID, int playerID, boolean occupied) {
+        //TODO implement here
+    }
+
+    /** This will ask the boardModel to calculate the possible moves
+     * @author Carl Zee
+     * @param characterID The ID of the character that can be moved.
+     * @param moveSet The moveSet that will be used in calculating the possible locations.
+     * @param startingLocation The starting location.
+     */
+    public void calculateMoves(int characterID, MoveSet moveSet, Location startingLocation) {
+        //TODO implement here
+    }
+
+    /** This will update the new location of an character to the firebase.
+     * @author Carl Zee
+     * @param characterID The character id of the character.
+     * @param location The new location.
+     */
+    public void locationClicked(int characterID, Location location) {
+        //TODO implement here
+    }
+
+    /** This will update the characterController with the new location of an character.
+     * @author Carl Zee
+     * @param characterID
+     * @param location
+     */
+    public void characterLocation(int characterID, Location location) {
         //TODO implement here
     }
 }
