@@ -56,7 +56,7 @@ public class CharacterModel implements Model {
      * @param characterID The character that is occupied.
      */
     public void displayCharacterOccupied(int characterID){
-        //TODO implemnt here
+        //TODO implement here
     }
 
     /** This will notify the obervers that a character has moved.
