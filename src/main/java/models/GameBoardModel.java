@@ -1,6 +1,7 @@
 package models;
 
 import java.util.List;
+import resources.supportingClasses.Location;
 
 /**
  *
@@ -23,6 +24,14 @@ public class GameBoardModel {
 
 	 private void updatePlayer() {
 		 
+	 }
+
+	/** This method will ask the destination from the boardView.
+	 * @author Carl Zee
+	 * @param locations All the possible legal locations.
+	 */
+	public void askMoves(Location[] locations) {
+		//TODO implement here;
 	 }
 
 

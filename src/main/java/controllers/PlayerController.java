@@ -42,7 +42,16 @@ public class PlayerController {
 	public void updatePlayer(PlayerModel player) {
 		
 	}
-	
-		
-	
+
+	/** This will get the moveSet that playerID may use.
+	 * @author Carl Zee
+	 * @param playerID The id of the player that it get's the moveSet from.
+	 */
+//	public MoveSet grabMoveSet(int playerID) {
+//		//TODO implement here
+//		return null;
+//	}
+
+
+
 }

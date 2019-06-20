@@ -21,7 +21,7 @@ import com.google.firebase.cloud.FirestoreClient;
 public class Database {
 	private static final Database instance = new Database();
 
-	private static final String PRIVATEKEYLOCATION = "C:\\Users\\tessa\\Documents\\MagicMazeOnline\\src\\main\\java\\configurations\\magicmaze-74bf0-firebase-adminsdk-0igqh-0b042ffbf0.json";
+	private static final String PRIVATEKEYLOCATION = "C:/Users/carlz/Documents/MagicMazeOnline/src/main/java/configurations/magicmaze-74bf0-firebase-adminsdk-0igqh-0b042ffbf0.json";
 	private static final String DATABASEURL = "https://magicmaze-74bf0.firebaseio.com";
 	private Firestore db;
 	
