@@ -2,6 +2,7 @@ package controllers;
 
 
 import com.google.cloud.firestore.DocumentSnapshot;
+import models.CharacterModel;
 import resources.supportingClasses.Location;
 import views.View;
 import resources.supportingClasses.MoveSet;
@@ -13,11 +14,23 @@ import resources.supportingClasses.MoveSet;
  */
 public class CharacterController implements Controller{
 
+    static CharacterController characterController;
+    CharacterModel characterModel;
+
     /**
-     * Default constructor
+     * If you call CharacterController.getInstance() it guarantees there is only 1 instance.
+     * It gives you the existing boardController or else it makes a new one.
+     *
+     * @return The characterController.
+     * @author Carl Zee
      */
-    public CharacterController() {
+    public static CharacterController getInstance() {
+        if (characterController == null) {
+            characterController = new CharacterController();
+        }
+        return characterController;
     }
+
 
     /**
      *

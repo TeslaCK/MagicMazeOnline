@@ -59,7 +59,7 @@ public class CharacterModel implements Model {
         //TODO implement here
     }
 
-    /** This will notify the obervers that a character has moved.
+    /** This will notify the observers that a character has moved.
      * @author Carl Zee
      * @param characterID The id of the character that is moved.
      * @param location The new location of the character.
