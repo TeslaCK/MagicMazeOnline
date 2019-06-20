@@ -26,58 +26,55 @@ import shared.Observer;
 
 
 /**
- *
  * @author C.K
  */
 public class GameView implements Observer, View {
-//	private Controller gameController;
-	private GameController gameController;
-	private Stage primaryStage;
-	//lijst met players
-	//gameboard controller
-	
-	
+    //	private Controller gameController;
+    private GameController gameController;
+    private Stage primaryStage;
+    //lijst met players
+    //gameboard controller
+
 
 //	public GameView(Controller controller) {
 //		this.gameController = controller;
 //		
 //		gameController.registerObserver(this);
 //	}
-	
-	
-
-	public GameView(Stage primaryStage) {
-		this.gameController = new GameController();
-		this.primaryStage = primaryStage;
-	}
 
 
+    public GameView(Stage primaryStage) {
+        this.gameController = new GameController();
+        this.primaryStage = primaryStage;
+    }
 
-	public void update(DocumentSnapshot ds) {
-	}
-	
 
-	public Stage loadPrimaryStageWithPane(Stage primaryStage) { 
-		Scene scene = new Scene(this.createMainPane(), 1920, 1080);
-        
+    public void update(DocumentSnapshot ds) {
+    }
+
+
+    public Stage loadPrimaryStageWithPane(Stage primaryStage) {
+        Scene scene = new Scene(this.createMainPane(), 900, 900);
+
         primaryStage.setTitle("game");
         primaryStage.setScene(scene);
         primaryStage.show();
-		
-		return primaryStage;
-	}
-	
 
-	private Pane createMainPane() {
-		Pane pane = new Pane();
-		//eruit
-		PlayerView playerView = new PlayerView();
-		BoardView boardView = new BoardView();
-		pane.getChildren().addAll( playerView.playerScoreAndRankingPane(), playerView.playerPane(), boardView.mainBoardPane());
-		
-		return pane;
-	}
-	
+        return primaryStage;
+    }
+
+
+    private Pane createMainPane() {
+        Pane pane = new Pane();
+        //eruit
+        PlayerView playerView = new PlayerView();
+        BoardView boardView = new BoardView();
+//		pane.getChildren().addAll( playerView.playerScoreAndRankingPane(), playerView.playerPane(), boardView.mainBoardPane());
+        pane.getChildren().addAll(boardView.mainBoardPane());
+
+        return pane;
+    }
+
 
 //	private Pane mainPlayersPane() {
 //		Pane pane = new Pane();
@@ -146,7 +143,7 @@ public class GameView implements Observer, View {
 //
 //		return pane;
 //	}
-	
+
 
 //	private Pane optionPane() {
 //		Pane pane = new Pane();
@@ -163,9 +160,9 @@ public class GameView implements Observer, View {
 //	}
 
 
-	@Override
-	public void update() {
-		// TODO Auto-generated method stub
-		
-	}
+    @Override
+    public void update() {
+        // TODO Auto-generated method stub
+
+    }
 }

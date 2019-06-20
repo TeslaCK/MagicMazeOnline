@@ -10,36 +10,35 @@ import java.io.IOException;
 import java.util.concurrent.ExecutionException;
 
 
-public class Main extends Application
-{    
-//	JoinLobbyView joinLobbyView = new JoinLobbyView();
-	LobbyView lobbyView;
+public class Main extends Application {
+    //	JoinLobbyView joinLobbyView = new JoinLobbyView();
+    LobbyView lobbyView;
 //	GameView gameView = new GameView();
 
 //	LoginAndRegisterView lobbyView = new LoginAndRegisterView();
-	
-	
+
+
     @Override
-	public void start(Stage primaryStage) throws IOException, InterruptedException, ExecutionException, NullPointerException {
-		try {
+    public void start(Stage primaryStage) throws IOException, InterruptedException, ExecutionException, NullPointerException {
+        try {
 //			PlayerModel player = new PlayerModel("gogeta", "lambo");
 //			firebaseService.get("games/game1/game1", "lobby", lobby);
-			
 
-			CreateOrJoinLobbyView createOrJoinLobbyView = new CreateOrJoinLobbyView(primaryStage);
-			createOrJoinLobbyView.loadPrimaryStageWithPane(primaryStage);
+
+            CreateOrJoinLobbyView createOrJoinLobbyView = new CreateOrJoinLobbyView(primaryStage);
+            createOrJoinLobbyView.loadPrimaryStageWithPane(primaryStage);
 //			joinLobbyView.loadPrimaryStageWithPane(primaryStage);
 //			this.lobbyView = new LobbyView(primaryStage);
 //			this.lobbyView.loadPrimaryStageWithPane(primaryStage);
 //			gameView.loadPrimaryStageWithPane(primaryStage);
 //			removeCrystalsFromCaravanView.loadPrimaryStageWithPane(primaryStage);
 //			upgradeCrysalView.loadPrimaryStageWithPane(primaryStage);
-		} catch(Exception e) {
-			e.printStackTrace();
-		}
-	}
-    
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     public static void main(String[] args) {
-		launch(args);
-	}
+        launch(args);
+    }
 }
