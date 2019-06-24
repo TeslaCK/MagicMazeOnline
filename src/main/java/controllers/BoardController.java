@@ -6,6 +6,7 @@ import resources.supportingClasses.Location;
 import views.View;
 import resources.supportingClasses.MoveSet;
 
+
 /**
  * 
  * @author C.K
@@ -82,4 +83,6 @@ public class BoardController implements Controller{
     public void characterLocation(int characterID, Location location) {
         //TODO implement here
     }
+
+
 }

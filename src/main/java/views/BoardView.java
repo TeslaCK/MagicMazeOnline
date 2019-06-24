@@ -2,15 +2,14 @@ package views;
 
 import com.google.cloud.firestore.DocumentSnapshot;
 
-import javafx.scene.layout.Border;
-import javafx.scene.layout.BorderStroke;
-import javafx.scene.layout.BorderStrokeStyle;
-import javafx.scene.layout.BorderWidths;
-import javafx.scene.layout.CornerRadii;
-import javafx.scene.layout.Pane;
+import javafx.scene.control.Button;
+import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import models.LobbyModel;
+import resources.supportingClasses.Buttons;
 import shared.Observer;
+
+import java.io.FileNotFoundException;
 
 
 /**
@@ -33,6 +32,15 @@ public class BoardView implements Observer, View {
 
         pane.setTranslateX(300);
         pane.setTranslateY(300);
+
+
+        Buttons test = new Buttons();
+        try {
+            pane.getChildren().addAll(test.tileButtons("C:\\Users\\tessa\\Desktop\\IIPSEN\\img\\tile.jpg"));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
 
 //        pane.getChildren().addAll(this.golemCardBoardPane(), this.actionCardBoardPane());
 

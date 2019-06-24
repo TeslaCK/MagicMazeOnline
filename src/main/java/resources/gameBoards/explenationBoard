@@ -1,0 +1,6 @@
+The first two numbers on top define the size of the board.
+1: Door
+2: Wall
+3: Starting position
+4: Item
+5: Exit

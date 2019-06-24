@@ -1,17 +1,35 @@
 package resources.supportingClasses;
 
-import java.util.ArrayList;
+import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.HBox;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 
-public class Button {
+public class Buttons {
+
+    public HBox tileButtons(String imagePath) throws FileNotFoundException {
+
+        try {
+
+            HBox hbox = new HBox();
+            Button button2 = new Button("test2");
 
 
-    public void setButtonLocation() {
-        ArrayList<Integer>[][] buttons = new ArrayList[10][10];
-        
+            FileInputStream input = new FileInputStream(imagePath);
+            Image image = new Image(input);
+            ImageView imageView = new ImageView(image);
+
+            Button button = new Button("", imageView);
+
+            hbox.getChildren().addAll(button, button2);
+
+            return hbox;
+        } finally {
+
+        }
     }
-
-
 }
-
 
 
