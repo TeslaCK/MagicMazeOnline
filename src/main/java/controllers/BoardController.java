@@ -1,26 +1,41 @@
 package controllers;
 
-
 import com.google.cloud.firestore.DocumentSnapshot;
+import models.BoardModel;
+import models.CharacterModel;
 import resources.supportingClasses.Location;
 import views.View;
 import resources.supportingClasses.MoveSet;
 
 
 /**
- * 
  * @author C.K
  */
-public class BoardController implements Controller{
+public class BoardController implements Controller {
+
+    static BoardController boardController;
+    private BoardModel boardModel;
+    private CharacterController characterController;
+
 
     /**
-     * Default constructor
+     * If you call BoardController.getInstance() it guarantees there is only 1 instance.
+     * It gives you the existing boardController or else it makes a new one.
+     *
+     * @return The boardController.
+     * @author Carl Zee
      */
-    public BoardController() {
+    public static BoardController getInstance() {
+        if (boardController == null) {
+            boardController = new BoardController();
+            boardController.boardModel = BoardModel.getInstance();
+            boardController.characterController = CharacterController.getInstance();
+        }
+        return boardController;
     }
 
+
     /**
-     *
      * @param ds The DocumentSnapshot.
      * @author Carl Zee
      */
@@ -29,7 +44,9 @@ public class BoardController implements Controller{
         // TODO implement here
     }
 
-    /** This method registrated the oberservers.
+    /**
+     * This method registrate the oberservers.
+     *
      * @param v The view that will be registered.
      * @author Carl Zee
      */
@@ -38,49 +55,65 @@ public class BoardController implements Controller{
         // TODO implement here
     }
 
-    /** This method notifies the CharacterController that which character is clicked by which player.
-     * @param playerID This is the id of the player who clicked.
+    /**
+     * This method notifies the CharacterController that which character is clicked by which player.
+     *
+     * @param playerID    This is the id of the player who clicked.
      * @param characterID This is the id of the clicked character.
      * @author Carl Zee
      */
     public void characterClicked(int characterID, int playerID) {
-        // TODO implement here
+        characterController.characterClicked(characterID, playerID);
     }
 
-    /** This method sends the character status to the CharacterController.
+    /**
+     * This method sends the character status to the CharacterController.
+     * TODO a method that calls this when the firebase is updated
+     *
      * @param characterID This is the id of the character.
-     * @param playerID This is the id of the player that clicked on the character, -1 is for no player.
-     * @param occupied True for occupied, false if not occupied.
+     * @param playerID    This is the id of the player that clicked on the character, -1 is for no player.
+     * @param occupied    True for occupied, false if not occupied.
      */
     public void characterStatus(int characterID, int playerID, boolean occupied) {
-        //TODO implement here
+        characterController.characterStatus(characterID, playerID, occupied);
     }
 
-    /** This will ask the boardModel to calculate the possible moves
-     * @author Carl Zee
+    /**
+     * This will ask the boardModel to calculate the possible moves
+     *
      * @param characterID The ID of the character that can be moved.
-     * @param moveSet The moveSet that will be used in calculating the possible locations.
-     * @param startingLocation The starting location.
+     * @param moveSet     The moveSet that will be used in calculating the possible locations.
+     * @author Carl Zee
      */
-    public void calculateMoves(int characterID, MoveSet moveSet, Location startingLocation) {
-        //TODO implement here
+    public void calculateMoves(int characterID, MoveSet moveSet) {
+        boardModel.calculateMoves(characterID, moveSet);
     }
 
-    /** This will update the new location of an character to the firebase.
-     * @author Carl Zee
+
+    /**
+     * This will update the new location of an character to the firebase.
+     *
      * @param characterID The character id of the character.
-     * @param location The new location.
+     * @param location    The new location.
+     * @param locations   The possible locations the character can go.
+     * @author Carl Zee
      */
-    public void locationClicked(int characterID, Location location) {
-        //TODO implement here
+    public void locationClicked(int characterID, Location location, Location[] locations) {
+        if (boardModel.locationIsFree()) {
+            characterLocationToFB(characterID, location);
+        } else {
+            boardModel.askMoves(locations);
+        }
     }
 
-    /** This will update the characterController with the new location of an character.
-     * @author Carl Zee
+    /**
+     * This will update the FireBaseService with the new location of an character.
+     *
      * @param characterID
      * @param location
+     * @author Carl Zee
      */
-    public void characterLocation(int characterID, Location location) {
+    public void characterLocationToFB(int characterID, Location location) {
         //TODO implement here
     }
 

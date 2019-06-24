@@ -8,10 +8,12 @@ public class Location {
     private int x;
     private int y;
 
-    /** Basic constructor.
-     * @author Carl Zee
+    /**
+     * The constructor.
+     *
      * @param x The x param of the location.
      * @param y The y param of the location.
+     * @author Carl Zee
      */
     public Location(int x, int y) {
         this.x = x;
@@ -36,12 +38,12 @@ public class Location {
 
     @Override
     public boolean equals(Object obj) {
-        if(obj == null) {
+        if (obj == null) {
             return false;
         }
-        if(!(obj instanceof Location)){
+        if (!(obj instanceof Location)) {
             return false;
         }
-        return (this.x == ((Location)obj).x && this.y == ((Location)obj).y);
+        return (this.x == ((Location) obj).x && this.y == ((Location) obj).y);
     }
 }
