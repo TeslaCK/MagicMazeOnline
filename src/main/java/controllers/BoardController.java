@@ -93,8 +93,8 @@ public class BoardController implements Controller {
      * This will update the new location of an character to the firebase.
      *
      * @param characterID The character id of the character.
-     * @param location The new location.
-     * @param locations The possible locations the character can go.
+     * @param location    The new location.
+     * @param locations   The possible locations the character can go.
      * @author Carl Zee
      */
     public void locationClicked(int characterID, Location location, Location[] locations) {
@@ -106,8 +106,7 @@ public class BoardController implements Controller {
     }
 
     /**
-     * This will update the characterController with the new location of an character.
-     * It will send the update to the FireBaseService
+     * This will update the FireBaseService with the new location of an character.
      *
      * @param characterID
      * @param location
