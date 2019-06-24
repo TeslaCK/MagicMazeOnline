@@ -3,8 +3,10 @@ package views;
 
 import com.google.cloud.firestore.DocumentSnapshot;
 
+import controllers.AuthenticationController;
 import controllers.GameController;
 import controllers.LobbyController;
+import controllers.SceneManager;
 import javafx.collections.ObservableList;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -26,15 +28,19 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
 import models.LobbyModel;
-
+import java.io.FileNotFoundException;
+import java.net.MalformedURLException;
 /**
  *
  * @author C.K
  */
 
 public class LoginAndRegisterView implements View {
-	private GameController gameController;
 	private LobbyController lobbyController;
+	private GameController gameController;
+	private AuthenticationController authenticationController;
+	private Stage primaryStage;
+	private SceneManager sceneManager;
 	private int buttonHeight=25;
 	private int buttonWidth=100;
 	private double labelWidth = 200;
@@ -43,7 +49,16 @@ public class LoginAndRegisterView implements View {
 	
 	public void update() {
 	}
-	
+	public Stage getPrimaryStage() {
+		return this.primaryStage;
+	}
+
+	public LoginAndRegisterView(Stage primaryStage) {
+		this.primaryStage = primaryStage;
+		this.sceneManager = new SceneManager();
+		this.lobbyController = new LobbyController();
+	}
+
 	public Stage loadPrimaryStageWithPane(Stage primaryStage) {
         Scene scene = new Scene(this.createMainPane(), 1920, 1080);
         
@@ -77,8 +92,20 @@ public class LoginAndRegisterView implements View {
 			//start gameButton
 			Button backButton = new Button("Back");
 			Button startLoginButton = new Button("Login");
-		    
-			
+
+//		startLoginButton.setOnAction(e -> {
+//			String valueOfTextField = usernameTxt.getText();
+//			this.authenticationController.CheckLogin(this.primaryStage, valueOfTextField);
+//		});
+
+		backButton.setOnAction(e -> {
+			try {
+				this.sceneManager.switchToCreateOrJoinLobbyView(this.getPrimaryStage());
+			} catch (FileNotFoundException | MalformedURLException ex) {
+				ex.printStackTrace();
+			}
+		});
+
 			//check box want to register or login
 			CheckBox checkBox1 = new CheckBox("Register");
 		VBox vBox = new VBox();

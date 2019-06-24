@@ -6,7 +6,8 @@ import views.CreateOrJoinLobbyView;
 import views.GameView;
 import views.JoinLobbyView;
 import views.LobbyView;
-//import views.PlayCardXTimesView;
+import java.io.FileNotFoundException;
+import java.net.MalformedURLException;
 
 
 /**
@@ -20,11 +21,9 @@ public class SceneManager {
 	}
 
 
-
 	public Stage switchToGameView(Stage primaryStage) {
 		GameView gameView = new GameView(primaryStage);
 		gameView.loadPrimaryStageWithPane(primaryStage);
-		
 		return primaryStage;
 	}
 	
@@ -45,9 +44,8 @@ public class SceneManager {
 		return primaryStage;
 	}
 	
-	
 
-	public Stage switchToCreateOrJoinLobbyView(Stage primaryStage) {
+	public Stage switchToCreateOrJoinLobbyView(Stage primaryStage) throws FileNotFoundException, MalformedURLException {
 		CreateOrJoinLobbyView createOrJoinLobbyView = new CreateOrJoinLobbyView(primaryStage);
 		createOrJoinLobbyView.loadPrimaryStageWithPane(primaryStage);
 		

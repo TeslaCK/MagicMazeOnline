@@ -44,69 +44,22 @@ public class PlayerView implements Observer, View {
 		
 		return pane;
 	}
-	
-	
 
-//	private Pane playableCardsPane() {
-//		Pane pane = new Pane();
-//
-//		pane.setMinSize(130, 180);
-//		pane.setBorder(new Border(new BorderStroke(Color.BLACK, BorderStrokeStyle.SOLID, new CornerRadii(10), new BorderWidths(2))));
-//
-//		pane.setTranslateX(160);
-//		pane.setTranslateY(10);
-//
-//		pane.getChildren().addAll();
-//
-//		return pane;
-//	}
-	
-	
 
-//	Pane playedCardsPane() {
-//		Pane pane = new Pane();
-//
-//		pane.setMinSize(130, 180);
-//		pane.setBorder(new Border(new BorderStroke(Color.BLACK, BorderStrokeStyle.SOLID, new CornerRadii(10), new BorderWidths(2))));
-//
-//		pane.setTranslateX(10);
-//		pane.setTranslateY(10);
-//
-//		pane.getChildren().addAll();
-//
-//		return pane;
-//	}
-	
-
-//	Pane caravanPane() {
-//		Pane pane = new Pane();
-//
-//		pane.setMinSize(130, 180);
-//		pane.setBorder(new Border(new BorderStroke(Color.BLACK, BorderStrokeStyle.SOLID, new CornerRadii(10), new BorderWidths(2))));
-//
-//		pane.setTranslateX(310);
-//		pane.setTranslateY(10);
-//
-//		pane.getChildren().addAll();
-//
-//		return pane;
-//	}
-	
-
-//	public Pane playerScoreAndRankingPane() {
-//		Pane pane = new Pane();
-//		Label score = new Label("score: ");
-//		Label ranking = new Label("ranking: ");
-//
-//		pane.setMaxSize(250, 200);
-//
-//		pane.setTranslateX(800);
-//		pane.setTranslateY(450);
-//
-//		ranking.setPadding(new Insets(0,0,0,150));
-//
-//		pane.getChildren().addAll(score, ranking);
-//
-//		return pane;
-//	}
+	public Pane playerScoreAndRankingPane() {
+		Pane pane = new Pane();
+		Label score = new Label("score: ");
+		Label ranking = new Label("ranking: ");
+		
+		pane.setMaxSize(750, 500);
+		
+		pane.setTranslateX(1600);
+		pane.setTranslateY(850);
+		
+		ranking.setPadding(new Insets(0,0,0,150));
+		
+		pane.getChildren().addAll(score, ranking);
+		
+		return pane;
+	}
 }

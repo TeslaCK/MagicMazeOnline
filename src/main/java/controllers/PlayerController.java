@@ -5,7 +5,6 @@ import models.PlayerModel;
 
 public class PlayerController {
 
-
 	/**
 	 *
 	 * @author C.K
@@ -41,7 +40,4 @@ public class PlayerController {
 	public void updatePlayer(PlayerModel player) {
 		
 	}
-
-
-
 }

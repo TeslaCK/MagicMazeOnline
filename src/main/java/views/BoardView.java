@@ -34,8 +34,6 @@ public class BoardView implements Observer, View {
         pane.setTranslateX(300);
         pane.setTranslateY(300);
 
-//        pane.getChildren().addAll(this.golemCardBoardPane(), this.actionCardBoardPane());
-
         return pane;
     }
 }

@@ -16,6 +16,13 @@ public class BoardController implements Controller {
     private BoardModel boardModel;
     private CharacterController characterController;
 
+    /**
+     * The Construnctor
+     */
+    private BoardController() {
+        boardController.boardModel = BoardModel.getInstance();
+        boardController.characterController = CharacterController.getInstance();
+    }
 
     /**
      * If you call BoardController.getInstance() it guarantees there is only 1 instance.
@@ -27,9 +34,7 @@ public class BoardController implements Controller {
     public static BoardController getInstance() {
         if (boardController == null) {
             boardController = new BoardController();
-            boardController.boardModel = BoardModel.getInstance();
-            boardController.characterController = CharacterController.getInstance();
-        }
+            }
         return boardController;
     }
 

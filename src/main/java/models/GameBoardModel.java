@@ -1,7 +1,6 @@
 package models;
 
 import java.util.List;
-import resources.supportingClasses.Location;
 
 /**
  *
