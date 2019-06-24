@@ -24,6 +24,8 @@ import models.LobbyModel;
 import models.Model;
 import shared.Observer;
 
+import java.io.FileNotFoundException;
+
 
 /**
  * @author C.K
@@ -70,7 +72,11 @@ public class GameView implements Observer, View {
         PlayerView playerView = new PlayerView();
         BoardView boardView = new BoardView();
 //		pane.getChildren().addAll( playerView.playerScoreAndRankingPane(), playerView.playerPane(), boardView.mainBoardPane());
-        pane.getChildren().addAll(boardView.mainBoardPane());
+        try {
+            pane.getChildren().addAll(boardView.mainBoardPane());
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
 
         return pane;
     }

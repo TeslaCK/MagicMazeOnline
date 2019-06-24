@@ -24,7 +24,7 @@ public class BoardView implements Observer, View {
     }
 
 
-    Pane mainBoardPane() {
+    Pane mainBoardPane() throws FileNotFoundException {
         Pane pane = new Pane();
 
         pane.setMinSize(300, 300);
@@ -35,12 +35,20 @@ public class BoardView implements Observer, View {
 
 
         Buttons test = new Buttons();
-        try {
-            pane.getChildren().addAll(test.tileButtons("C:\\Users\\tessa\\Desktop\\IIPSEN\\img\\tile.jpg"));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+        test.readFile();
+        test.tileButtons();
+        pane.getChildren().addAll(test.tileButtons());
 
+
+
+
+
+
+//        try {
+//            pane.getChildren().addAll(test.tileButtonsH("C:\\Users\\tessa\\Desktop\\IIPSEN\\img\\tile.jpg"));
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        }
 
 //        pane.getChildren().addAll(this.golemCardBoardPane(), this.actionCardBoardPane());
 
