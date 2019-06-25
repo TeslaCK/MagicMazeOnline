@@ -1,14 +1,15 @@
 package resources.supportingClasses;
 
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
-
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+
 
 /**
  * @author Tessa
@@ -57,8 +58,12 @@ public class Buttons {
             ImageView imageView = new ImageView(image);
 
             //for loop to loop through all the elements in the list.
-            for(int i = 0; i < boardArr.size(); i++) {
+            for (int i = 0; i < boardArr.size(); i++) {
                 for (int j = 0; j < boardArr.get(i).size(); j++) {
+
+                    gridPane.setPadding(new Insets(150, 250, 250, 550));
+                    gridPane.setMaxSize(500, 500);
+
 
                     //creating all the buttons
                     Button b1 = new Button(boardArr.get(i).get(j), imageView);
@@ -284,6 +289,9 @@ public class Buttons {
                     gridPane.add(b99, 8, 10);
                     gridPane.add(b100, 9, 10);
 
+
+
+
                     // array of buttons, makes it easier to set things for all the buttons.
                     Button[] buttons = new Button[]{
                             b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, b14, b15, b16, b17, b18, b19, b20,
@@ -295,8 +303,12 @@ public class Buttons {
 
                     for (Button button : buttons) {
                         button.setMaxSize(50, 50);
+                                              
+
                     }
+
                 }
+
             }
             return gridPane;
 

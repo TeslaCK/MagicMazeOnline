@@ -6,6 +6,7 @@ import controllers.Controller;
 import controllers.GameController;
 import controllers.LobbyController;
 import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -72,7 +73,8 @@ public class GameView implements Observer, View {
         //eruit
         PlayerView playerView = new PlayerView();
         BoardView boardView = new BoardView();
-        pane.getChildren().addAll(playerView.playerScoreAndRankingPane(), playerView.playerPane(), boardView.mainBoardPane());
+        //, playerView.playerScoreAndRankingPane(), playerView.playerPane(), boardView.mainBoardPane()
+
 
         Buttons buttons = new Buttons();
         buttons.readFile();
@@ -82,6 +84,8 @@ public class GameView implements Observer, View {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+
+
 
         return pane;
     }
