@@ -1,7 +1,10 @@
 package models;
 
 import java.util.List;
+<<<<<<< HEAD
 import resources.supportingClasses.Location;
+=======
+>>>>>>> c93528c8d51682e57e40e8becd4236f5248db1d9
 
 /**
  *
@@ -25,4 +28,9 @@ public class GameBoardModel {
 	 private void updatePlayer() {
 		 
 	 }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> c93528c8d51682e57e40e8becd4236f5248db1d9
 }

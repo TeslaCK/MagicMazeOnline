@@ -1,5 +1,10 @@
 package models;
 
+<<<<<<< HEAD
+=======
+import java.io.FileNotFoundException;
+import java.net.MalformedURLException;
+>>>>>>> c93528c8d51682e57e40e8becd4236f5248db1d9
 import java.util.ArrayList;
 import java.util.List;
 
@@ -63,7 +68,11 @@ public class GameModel implements Observable, Model {
 	}
 
 
+<<<<<<< HEAD
 	public void handleLogin(String username, String password, Stage primaryStage) {
+=======
+	public void handleLogin(String username, String password, Stage primaryStage) throws FileNotFoundException, MalformedURLException {
+>>>>>>> c93528c8d51682e57e40e8becd4236f5248db1d9
 		if (username.isEmpty() || password.isEmpty()) {
     		Alert alert = new Alert(AlertType.INFORMATION);
     		alert.setTitle("Oops!");

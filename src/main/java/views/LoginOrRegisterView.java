@@ -1,5 +1,9 @@
 package views;
 
+<<<<<<< HEAD
+=======
+import controllers.SceneManager;
+>>>>>>> c93528c8d51682e57e40e8becd4236f5248db1d9
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
@@ -25,11 +29,27 @@ import javafx.scene.paint.Color;
  */
 
 public class LoginOrRegisterView implements View{
+<<<<<<< HEAD
 	private LobbyController lobbyController;
 	private int buttonHeight=25;
 	private int buttonWidth=100;
 	
 	
+=======
+	private int buttonHeight=25;
+	private int buttonWidth=100;
+	private LobbyController lobbyController;
+	private Stage primaryStage;
+	private SceneManager sceneManager;
+
+	public LoginOrRegisterView(Stage primaryStage) {
+		this.primaryStage = primaryStage;
+		this.sceneManager = new SceneManager();
+		this.lobbyController = new LobbyController();
+	}
+
+
+>>>>>>> c93528c8d51682e57e40e8becd4236f5248db1d9
 	public void update() {
 	}
 	

@@ -37,8 +37,13 @@ public class PlayerView implements Observer, View {
 		pane.setMinSize(450, 200);
 		pane.setBorder(new Border(new BorderStroke(Color.BLACK, BorderStrokeStyle.SOLID, new CornerRadii(10), new BorderWidths(2))));
 
+<<<<<<< HEAD
 		pane.setTranslateX(200);
 		pane.setTranslateY(250);
+=======
+		pane.setTranslateX(700);
+		pane.setTranslateY(750);
+>>>>>>> c93528c8d51682e57e40e8becd4236f5248db1d9
 		
 		pane.getChildren().addAll();
 		
@@ -93,6 +98,7 @@ public class PlayerView implements Observer, View {
 //	}
 	
 
+<<<<<<< HEAD
 //	public Pane playerScoreAndRankingPane() {
 //		Pane pane = new Pane();
 //		Label score = new Label("score: ");
@@ -109,4 +115,22 @@ public class PlayerView implements Observer, View {
 //
 //		return pane;
 //	}
+=======
+	public Pane playerScoreAndRankingPane() {
+		Pane pane = new Pane();
+		Label score = new Label("score: ");
+		Label ranking = new Label("ranking: ");
+		
+		pane.setMaxSize(750, 500);
+		
+		pane.setTranslateX(1600);
+		pane.setTranslateY(850);
+		
+		ranking.setPadding(new Insets(0,0,0,150));
+		
+		pane.getChildren().addAll(score, ranking);
+		
+		return pane;
+	}
+>>>>>>> c93528c8d51682e57e40e8becd4236f5248db1d9
 }

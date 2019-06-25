@@ -133,6 +133,10 @@ public class FirebaseService {
 		return null;
 	}
 	
+<<<<<<< HEAD
+=======
+	
+>>>>>>> c93528c8d51682e57e40e8becd4236f5248db1d9
 
 	public void delete(String documentId) {
 		ApiFuture<WriteResult> writeResult = this.colRef.document(documentId).delete();

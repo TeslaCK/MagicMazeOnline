@@ -3,8 +3,15 @@ package views;
 
 import com.google.cloud.firestore.DocumentSnapshot;
 
+<<<<<<< HEAD
 import controllers.GameController;
 import controllers.LobbyController;
+=======
+import controllers.AuthenticationController;
+import controllers.GameController;
+import controllers.LobbyController;
+import controllers.SceneManager;
+>>>>>>> c93528c8d51682e57e40e8becd4236f5248db1d9
 import javafx.collections.ObservableList;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -27,14 +34,28 @@ import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
 import models.LobbyModel;
 
+<<<<<<< HEAD
+=======
+import java.io.FileNotFoundException;
+import java.net.MalformedURLException;
+
+>>>>>>> c93528c8d51682e57e40e8becd4236f5248db1d9
 /**
  *
  * @author C.K
  */
 
 public class LoginAndRegisterView implements View {
+<<<<<<< HEAD
 	private GameController gameController;
 	private LobbyController lobbyController;
+=======
+	private LobbyController lobbyController;
+	private GameController gameController;
+	private AuthenticationController authenticationController;
+	private Stage primaryStage;
+	private SceneManager sceneManager;
+>>>>>>> c93528c8d51682e57e40e8becd4236f5248db1d9
 	private int buttonHeight=25;
 	private int buttonWidth=100;
 	private double labelWidth = 200;
@@ -43,6 +64,19 @@ public class LoginAndRegisterView implements View {
 	
 	public void update() {
 	}
+<<<<<<< HEAD
+=======
+
+	public Stage getPrimaryStage() {
+		return this.primaryStage;
+	}
+
+	public LoginAndRegisterView(Stage primaryStage) {
+		this.primaryStage = primaryStage;
+		this.sceneManager = new SceneManager();
+		this.lobbyController = new LobbyController();
+	}
+>>>>>>> c93528c8d51682e57e40e8becd4236f5248db1d9
 	
 	public Stage loadPrimaryStageWithPane(Stage primaryStage) {
         Scene scene = new Scene(this.createMainPane(), 1920, 1080);
@@ -77,7 +111,23 @@ public class LoginAndRegisterView implements View {
 			//start gameButton
 			Button backButton = new Button("Back");
 			Button startLoginButton = new Button("Login");
+<<<<<<< HEAD
 		    
+=======
+
+//		startLoginButton.setOnAction(e -> {
+//			String valueOfTextField = usernameTxt.getText();
+//			this.authenticationController.CheckLogin(this.primaryStage, valueOfTextField);
+//		});
+
+		backButton.setOnAction(e -> {
+			try {
+				this.sceneManager.switchToCreateOrJoinLobbyView(this.getPrimaryStage());
+			} catch (FileNotFoundException | MalformedURLException ex) {
+				ex.printStackTrace();
+			}
+		});
+>>>>>>> c93528c8d51682e57e40e8becd4236f5248db1d9
 			
 			//check box want to register or login
 			CheckBox checkBox1 = new CheckBox("Register");

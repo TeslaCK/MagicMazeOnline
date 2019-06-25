@@ -24,6 +24,7 @@ import models.LobbyModel;
 import models.Model;
 import shared.Observer;
 
+<<<<<<< HEAD
 import java.io.FileNotFoundException;
 
 
@@ -37,12 +38,28 @@ public class GameView implements Observer, View {
     //lijst met players
     //gameboard controller
 
+=======
+
+/**
+ *
+ * @author C.K
+ */
+public class GameView implements Observer, View {
+//	private Controller gameController;
+	private GameController gameController;
+	private Stage primaryStage;
+	//lijst met players
+	//gameboard controller
+	
+	
+>>>>>>> c93528c8d51682e57e40e8becd4236f5248db1d9
 
 //	public GameView(Controller controller) {
 //		this.gameController = controller;
 //		
 //		gameController.registerObserver(this);
 //	}
+<<<<<<< HEAD
 
 
     public GameView(Stage primaryStage) {
@@ -81,6 +98,43 @@ public class GameView implements Observer, View {
         return pane;
     }
 
+=======
+	
+	
+
+	public GameView(Stage primaryStage) {
+		this.gameController = new GameController();
+		this.primaryStage = primaryStage;
+	}
+
+
+
+	public void update(DocumentSnapshot ds) {
+	}
+	
+
+	public Stage loadPrimaryStageWithPane(Stage primaryStage) { 
+		Scene scene = new Scene(this.createMainPane(), 1920, 1080);
+        
+        primaryStage.setTitle("game");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+		
+		return primaryStage;
+	}
+	
+
+	private Pane createMainPane() {
+		Pane pane = new Pane();
+		//eruit
+		PlayerView playerView = new PlayerView();
+		BoardView boardView = new BoardView();
+		pane.getChildren().addAll( playerView.playerScoreAndRankingPane(), playerView.playerPane(), boardView.mainBoardPane());
+		
+		return pane;
+	}
+	
+>>>>>>> c93528c8d51682e57e40e8becd4236f5248db1d9
 
 //	private Pane mainPlayersPane() {
 //		Pane pane = new Pane();
@@ -149,7 +203,11 @@ public class GameView implements Observer, View {
 //
 //		return pane;
 //	}
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> c93528c8d51682e57e40e8becd4236f5248db1d9
 
 //	private Pane optionPane() {
 //		Pane pane = new Pane();
@@ -166,9 +224,17 @@ public class GameView implements Observer, View {
 //	}
 
 
+<<<<<<< HEAD
     @Override
     public void update() {
         // TODO Auto-generated method stub
 
     }
+=======
+	@Override
+	public void update() {
+		// TODO Auto-generated method stub
+		
+	}
+>>>>>>> c93528c8d51682e57e40e8becd4236f5248db1d9
 }
