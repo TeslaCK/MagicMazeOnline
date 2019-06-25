@@ -1,17 +1,12 @@
 package resources.supportingClasses;
 
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
-import javafx.stage.Stage;
+
 
 import java.io.*;
-import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,12 +15,11 @@ import java.util.List;
  */
 
 public class Buttons {
-    //    List<String> boardArr = new ArrayList<>();
+    //2D array List
     List<List<String>> boardArr = new ArrayList<List<String>>();
-    //    ArrayList<String>[][] boardArr = new ArrayList[10][10];
-    //    String[][] boardArr = new String[10][10];
 
 
+    //Read file method, reads out the file that contains all the positions of the elements on the board.
     public void readFile() {
         try {
             File startingBoard = new File("C:\\Users\\tessa\\Documents\\MagicMazeOnline\\src\\main\\java\\resources\\gameBoards\\startingBoard.txt");
@@ -33,7 +27,6 @@ public class Buttons {
             BufferedReader bufReader = new BufferedReader(fileReader);
 
             boardArr.add(new ArrayList<String>());
-            //    boardArr[0][0] = new ArrayList<>();
 
             String line = null;
 
@@ -42,7 +35,6 @@ public class Buttons {
                     boardArr.get(i).add(line);
                     System.out.println(line);
                 }
-
             }
             bufReader.close();
             fileReader.close();
@@ -52,26 +44,23 @@ public class Buttons {
                 IOException e) {
             e.printStackTrace();
         }
-
     }
 
-    //    public VBox tileButtons(String imagePath) throws FileNotFoundException {
+    //Method takes the file that contains elements, and loops through the list.
     public GridPane tileButtons() throws FileNotFoundException {
         String imagePath = "C:\\Users\\tessa\\Desktop\\IIPSEN\\img\\tile.jpg";
         GridPane gridPane = new GridPane();
-        HBox hbox = new HBox();
 
         try {
-
             FileInputStream input = new FileInputStream(imagePath);
             Image image = new Image(input);
             ImageView imageView = new ImageView(image);
 
-
-            for (int i = 0; i < boardArr.size(); i++) {
+            //for loop to loop through all the elements in the list.
+            for(int i = 0; i < boardArr.size(); i++) {
                 for (int j = 0; j < boardArr.get(i).size(); j++) {
 
-
+                    //creating all the buttons
                     Button b1 = new Button(boardArr.get(i).get(j), imageView);
                     Button b2 = new Button(boardArr.get(i).get(j), imageView);
                     Button b3 = new Button(boardArr.get(i).get(j), imageView);
@@ -83,7 +72,7 @@ public class Buttons {
                     Button b9 = new Button(boardArr.get(i).get(j), imageView);
                     Button b10 = new Button(boardArr.get(i).get(j), imageView);
 
-
+                    //adding the buttons to a grid pane
                     gridPane.add(b1, 0, 0);
                     gridPane.add(b2, 1, 0);
                     gridPane.add(b3, 2, 0);
@@ -100,7 +89,6 @@ public class Buttons {
                     Button b13 = new Button(boardArr.get(i).get(j), imageView);
                     Button b14 = new Button(boardArr.get(i).get(j), imageView);
                     Button b15 = new Button(boardArr.get(i).get(j), imageView);
-
                     Button b16 = new Button(boardArr.get(i).get(j), imageView);
                     Button b17 = new Button(boardArr.get(i).get(j), imageView);
                     Button b18 = new Button(boardArr.get(i).get(j), imageView);
@@ -296,10 +284,7 @@ public class Buttons {
                     gridPane.add(b99, 8, 10);
                     gridPane.add(b100, 9, 10);
 
-
-
-
-
+                    // array of buttons, makes it easier to set things for all the buttons.
                     Button[] buttons = new Button[]{
                             b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, b14, b15, b16, b17, b18, b19, b20,
                             b21, b22, b23, b24, b25, b26, b27, b28, b29, b30, b31, b32, b33, b34, b35, b36, b37, b38, b39, b40,
@@ -311,52 +296,13 @@ public class Buttons {
                     for (Button button : buttons) {
                         button.setMaxSize(50, 50);
                     }
-
-
                 }
-
-
             }
-
-
             return gridPane;
 
-
         } finally {
-
         }
-
     }
-
-
-//    public HBox tileButtonsH(String imagePath) throws FileNotFoundException {
-//
-//        try {
-//
-//            HBox hBox = new HBox();
-//
-//
-//            FileInputStream input = new FileInputStream(imagePath);
-//            Image image = new Image(input);
-//            ImageView imageView = new ImageView(image);
-//
-//
-//            for (int i = 0; i < boardArr.size(); i++) {
-//                for (int j = 0; j < boardArr.get(i).size(); j++) {
-//
-//                    hBox.getChildren().add(new Button(boardArr.get(i).get(j)));
-//
-//
-//                }
-//            }
-//            return hBox;
-//
-//        } finally {
-//
-//        }
-//    }
-
-
 }
 
 
