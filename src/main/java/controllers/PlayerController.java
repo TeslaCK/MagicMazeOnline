@@ -6,52 +6,40 @@ import models.PlayerModel;
 public class PlayerController {
 
 
-<<<<<<< HEAD
-=======
+    /**
+     * @author C.K
+     */
+    public void playerWantsToRest(PlayerModel player) {
+        player.rest();
 
->>>>>>> c93528c8d51682e57e40e8becd4236f5248db1d9
-	/**
-	 *
-	 * @author C.K
-	 */
-	public void playerWantsToRest(PlayerModel player) {
-		player.rest();
-		
-	}
+    }
 
-	public void playerWantsToJoinLobby() {
-		
-	}
+    public void playerWantsToJoinLobby() {
 
-	public void playerWantsToLeaveLobby() {
-		
-	}
+    }
 
-	public void playerWantsToSeeTheOptions() {
-		
-	}
+    public void playerWantsToLeaveLobby() {
 
-	public void playerWantsToSeeInstructions() {
-		
-	}
+    }
 
-	public void playerMutesOrUnmutesSound(PlayerModel player) {
-		
-	}
-	public void showPlayer() {
-		
-	}
+    public void playerWantsToSeeTheOptions() {
 
-	public void updatePlayer(PlayerModel player) {
-		
-	}
-<<<<<<< HEAD
+    }
 
+    public void playerWantsToSeeInstructions() {
 
+    }
 
-=======
-	
-		
-	
->>>>>>> c93528c8d51682e57e40e8becd4236f5248db1d9
+    public void playerMutesOrUnmutesSound(PlayerModel player) {
+
+    }
+
+    public void showPlayer() {
+
+    }
+
+    public void updatePlayer(PlayerModel player) {
+
+    }
+
 }

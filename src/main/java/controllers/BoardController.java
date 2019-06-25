@@ -1,6 +1,6 @@
 package controllers;
 
-<<<<<<< HEAD
+
 import com.google.cloud.firestore.DocumentSnapshot;
 import models.BoardModel;
 import models.CharacterModel;
@@ -118,13 +118,5 @@ public class BoardController implements Controller {
         //TODO implement here
     }
 
-=======
-
-/**
- * 
- * @author C.K
- */
-public class BoardController {
->>>>>>> c93528c8d51682e57e40e8becd4236f5248db1d9
 
 }

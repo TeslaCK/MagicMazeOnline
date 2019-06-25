@@ -1,10 +1,8 @@
 package models;
 
-<<<<<<< HEAD
-=======
+
 import java.io.FileNotFoundException;
 import java.net.MalformedURLException;
->>>>>>> c93528c8d51682e57e40e8becd4236f5248db1d9
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,155 +17,144 @@ import views.CreateOrJoinLobbyView;
 import views.View;
 
 /**
- *
  * @author C.K
  */
 public class GameModel implements Observable, Model {
-	private List<View> observers = new ArrayList<View>();
-	private ArrayList<PlayerModel> playerModels =  new ArrayList<PlayerModel>();
-	private PlayerModel currentPlayer = new PlayerModel("vegeto", "ultra");
-	private int id;
-	private String state;
-	
-	
-	public GameModel() {
-	}
-	
+    private List<View> observers = new ArrayList<View>();
+    private ArrayList<PlayerModel> playerModels = new ArrayList<PlayerModel>();
+    private PlayerModel currentPlayer = new PlayerModel("vegeto", "ultra");
+    private int id;
+    private String state;
 
-	public void registerObserver(View v) {
-		this.observers.add(v);
-	}
 
-	
-	public void unregisterObserver(View v) {
-		this.observers.remove(v);
-		
-	}
+    public GameModel() {
+    }
 
-	
-	public void notifyObservers(DocumentSnapshot ds) {
-		// Notify views of model update
+
+    public void registerObserver(View v) {
+        this.observers.add(v);
+    }
+
+
+    public void unregisterObserver(View v) {
+        this.observers.remove(v);
+
+    }
+
+
+    public void notifyObservers(DocumentSnapshot ds) {
+        // Notify views of model update
 //		for (View o : observers) {
 //			o.update();
 //		}		
-	}
+    }
 
 
-	public void playerAtTurn() {
-		
-	}
-	
-	
-	public PlayerModel getCurrentPlayer() {
-		return currentPlayer;
-	}
+    public void playerAtTurn() {
+
+    }
 
 
-	public void setCurrentPlayer(PlayerModel currentPlayer) {
-		this.currentPlayer = currentPlayer;
-	}
+    public PlayerModel getCurrentPlayer() {
+        return currentPlayer;
+    }
 
 
-<<<<<<< HEAD
-	public void handleLogin(String username, String password, Stage primaryStage) {
-=======
-	public void handleLogin(String username, String password, Stage primaryStage) throws FileNotFoundException, MalformedURLException {
->>>>>>> c93528c8d51682e57e40e8becd4236f5248db1d9
-		if (username.isEmpty() || password.isEmpty()) {
-    		Alert alert = new Alert(AlertType.INFORMATION);
-    		alert.setTitle("Oops!");
-    		alert.setHeaderText(null);
-    		alert.setContentText("It seems you got incorrect credentials!");
-    		alert.showAndWait();
-    	} 
-		else {
-			for (int i = 0; i < playerModels.size(); i++) {
-				String username1=playerModels.get(i).getUsername();
-				String password1=playerModels.get(i).getPassword();
-				if(username.equals(username1) == true) {
-					if(password.equals(password1) == true) {
-					  CreateOrJoinLobbyView createOrJoinLobbyView = new CreateOrJoinLobbyView(primaryStage);
-						createOrJoinLobbyView.loadPrimaryStageWithPane(primaryStage);
-					}
-				  }
-				  else {
-					  Alert alert = new Alert(AlertType.INFORMATION);
-			    		alert.setTitle("Oops!");
-			    		alert.setHeaderText(null);
-			    		alert.setContentText("It seems you got incorrect credentials!");
-			    		alert.showAndWait();
-			    		return; 
-				  }
-			}
-		
-		}
-		
-		
-		}
-		
+    public void setCurrentPlayer(PlayerModel currentPlayer) {
+        this.currentPlayer = currentPlayer;
+    }
 
-	public void registerPlayer(String username, String password) {
-		if (username.isEmpty() || password.isEmpty()) {
-    		Alert alert = new Alert(AlertType.INFORMATION);
-    		alert.setTitle("Oops!");
-    		alert.setHeaderText(null);
-    		alert.setContentText("It seems you didn't enter valid credentials!");
-    		alert.showAndWait();
-    	} 
-		else {
-			for (int i = 0; i < playerModels.size(); i++) {
-				String username1=playerModels.get(i).getUsername();
-				  if(username.equals(username1) == true) {
-					  Alert alert = new Alert(AlertType.INFORMATION);
-			    		alert.setTitle("Oops!");
-			    		alert.setHeaderText(null);
-			    		alert.setContentText("It seems that this username is already taken!");
-			    		alert.showAndWait();
-			    		return;
-			    		}
-				  PlayerModel v = new PlayerModel(username, password);		
-					this.playerModels.add(v);
-				  
-					  
-				  
-				  }
-		
-			}
-		}
-	
-	
-	public void loginPlayer() {
-		
-	}
-	
-	
-	public void loadGame() {
-		
-	}
-	
-	
-	public void updateGame() {
-		
-	}
-	
-	
-	public void endGame() {
-		
-	}
-	
-	
-	public void changeTurn() {
-		
-	}
-	
-	
-	public void getFirebaseService() {
-		
-	}
-	
-	
-	public void setFirebaseService() {
-		
-	}
+
+    public void handleLogin(String username, String password, Stage primaryStage) throws FileNotFoundException, MalformedURLException {
+        if (username.isEmpty() || password.isEmpty()) {
+            Alert alert = new Alert(AlertType.INFORMATION);
+            alert.setTitle("Oops!");
+            alert.setHeaderText(null);
+            alert.setContentText("It seems you got incorrect credentials!");
+            alert.showAndWait();
+        } else {
+            for (int i = 0; i < playerModels.size(); i++) {
+                String username1 = playerModels.get(i).getUsername();
+                String password1 = playerModels.get(i).getPassword();
+                if (username.equals(username1) == true) {
+                    if (password.equals(password1) == true) {
+                        CreateOrJoinLobbyView createOrJoinLobbyView = new CreateOrJoinLobbyView(primaryStage);
+                        createOrJoinLobbyView.loadPrimaryStageWithPane(primaryStage);
+                    }
+                } else {
+                    Alert alert = new Alert(AlertType.INFORMATION);
+                    alert.setTitle("Oops!");
+                    alert.setHeaderText(null);
+                    alert.setContentText("It seems you got incorrect credentials!");
+                    alert.showAndWait();
+                    return;
+                }
+            }
+
+        }
+
+
+    }
+
+
+    public void registerPlayer(String username, String password) {
+        if (username.isEmpty() || password.isEmpty()) {
+            Alert alert = new Alert(AlertType.INFORMATION);
+            alert.setTitle("Oops!");
+            alert.setHeaderText(null);
+            alert.setContentText("It seems you didn't enter valid credentials!");
+            alert.showAndWait();
+        } else {
+            for (int i = 0; i < playerModels.size(); i++) {
+                String username1 = playerModels.get(i).getUsername();
+                if (username.equals(username1) == true) {
+                    Alert alert = new Alert(AlertType.INFORMATION);
+                    alert.setTitle("Oops!");
+                    alert.setHeaderText(null);
+                    alert.setContentText("It seems that this username is already taken!");
+                    alert.showAndWait();
+                    return;
+                }
+                PlayerModel v = new PlayerModel(username, password);
+                this.playerModels.add(v);
+
+
+            }
+
+        }
+    }
+
+
+    public void loginPlayer() {
+
+    }
+
+
+    public void loadGame() {
+
+    }
+
+
+    public void updateGame() {
+
+    }
+
+
+    public void endGame() {
+
+    }
+
+    public void changeTurn() {
+
+    }
+
+    public void getFirebaseService() {
+
+    }
+
+
+    public void setFirebaseService() {
+
+    }
 
 }
