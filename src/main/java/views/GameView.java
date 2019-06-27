@@ -73,7 +73,7 @@ public class GameView implements Observer, View {
         //eruit
         PlayerView playerView = new PlayerView();
         BoardView boardView = new BoardView();
-        //, playerView.playerScoreAndRankingPane(), playerView.playerPane(), boardView.mainBoardPane()
+//        , playerView.playerScoreAndRankingPane(), playerView.playerPane(), boardView.mainBoardPane()
 
 
         Buttons buttons = new Buttons();

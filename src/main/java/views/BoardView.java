@@ -2,14 +2,12 @@ package views;
 
 import com.google.cloud.firestore.DocumentSnapshot;
 
-
 import javafx.scene.layout.Border;
 import javafx.scene.layout.BorderStroke;
 import javafx.scene.layout.BorderStrokeStyle;
 import javafx.scene.layout.BorderWidths;
 import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.Pane;
-
 import javafx.scene.paint.Color;
 import models.LobbyModel;
 import resources.supportingClasses.Buttons;
@@ -19,7 +17,6 @@ import shared.Observer;
 import java.io.FileNotFoundException;
 
 /**
- * =======
  * import javafx.scene.paint.Color;
  * import models.LobbyModel;
  * import shared.Observer;
@@ -27,7 +24,6 @@ import java.io.FileNotFoundException;
  * <p>
  * /**
  * <p>
- * >>>>>>> c93528c8d51682e57e40e8becd4236f5248db1d9
  *
  * @author C.K
  */

@@ -303,7 +303,7 @@ public class Buttons {
 
                     for (Button button : buttons) {
                         button.setMaxSize(50, 50);
-                                              
+
 
                     }
 
