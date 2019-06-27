@@ -27,21 +27,20 @@ public class PlayerView implements Observer, View {
 	@Override
 	public void update() {
 		// TODO Auto-generated method stub
-		
 	}
-	
+
 
 	Pane playerPane() {
 		Pane pane = new Pane();
-		
+
 		pane.setMinSize(450, 200);
 		pane.setBorder(new Border(new BorderStroke(Color.BLACK, BorderStrokeStyle.SOLID, new CornerRadii(10), new BorderWidths(2))));
 
-		pane.setTranslateX(200);
-		pane.setTranslateY(250);
-		
+		pane.setTranslateX(700);
+		pane.setTranslateY(750);
+
 		pane.getChildren().addAll();
-		
+
 		return pane;
 	}
 
@@ -50,16 +49,16 @@ public class PlayerView implements Observer, View {
 		Pane pane = new Pane();
 		Label score = new Label("score: ");
 		Label ranking = new Label("ranking: ");
-		
+
 		pane.setMaxSize(750, 500);
-		
+
 		pane.setTranslateX(1600);
 		pane.setTranslateY(850);
-		
-		ranking.setPadding(new Insets(0,0,0,150));
-		
+
+		ranking.setPadding(new Insets(0, 0, 0, 150));
+
 		pane.getChildren().addAll(score, ranking);
-		
+
 		return pane;
 	}
 }

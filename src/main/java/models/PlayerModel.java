@@ -74,15 +74,10 @@ public class PlayerModel implements Observable, Model {
 //			o.update();
 //		}
 	}
-	
-	
 
-	
-	
 	public String getUsername() {
 		return username;
 	}
-
 
 	public String getPassword() {
 		return password;

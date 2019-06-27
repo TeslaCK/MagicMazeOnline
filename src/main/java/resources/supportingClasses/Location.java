@@ -4,7 +4,6 @@ package resources.supportingClasses;
  * @author Carl Zee
  */
 public class Location {
-
     private int x;
     private int y;
 
@@ -36,6 +35,11 @@ public class Location {
         this.y = y;
     }
 
+    /**
+     * Checks if a object is equal to a point.
+     * @param obj The obj that is compared to this
+     * @return Return true if obj isn't null, obj is a point and the x and y are the same.
+     */
     @Override
     public boolean equals(Object obj) {
         if (obj == null) {

@@ -132,7 +132,6 @@ public class FirebaseService {
 		} 
 		return null;
 	}
-
 	public void delete(String documentId) {
 		ApiFuture<WriteResult> writeResult = this.colRef.document(documentId).delete();
 	}

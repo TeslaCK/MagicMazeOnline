@@ -4,9 +4,7 @@ import java.io.FileNotFoundException;
 import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.List;
-
 import com.google.cloud.firestore.DocumentSnapshot;
-
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
@@ -162,5 +160,4 @@ public class GameModel implements Observable, Model {
 	public void setFirebaseService() {
 		
 	}
-
 }

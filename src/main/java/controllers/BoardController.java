@@ -7,6 +7,7 @@ import resources.supportingClasses.Location;
 import views.View;
 import resources.supportingClasses.MoveSet;
 
+
 /**
  * @author C.K
  */

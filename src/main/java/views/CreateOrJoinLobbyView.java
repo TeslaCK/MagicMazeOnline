@@ -31,6 +31,7 @@ import javafx.stage.Screen;
 import javafx.stage.Stage;
 import models.LobbyModel;
 import java.io.File;
+
 /**
  *
  * @author C.K
@@ -39,6 +40,7 @@ public class CreateOrJoinLobbyView implements View {
 	private LobbyController lobbyController;
 	private Stage primaryStage;
 	private SceneManager sceneManager;
+
 	int screenWidth = (int) Screen.getPrimary().getBounds().getWidth();
 	int screenHeight = (int) Screen.getPrimary().getBounds().getHeight();
 
@@ -73,6 +75,7 @@ public class CreateOrJoinLobbyView implements View {
 
 	BorderPane createMainPane() {
 		BorderPane bPane = new BorderPane();
+		bPane.setCenter(this.createOrJoinLobby());
 
 		ImageView imageViewleft = new ImageView();
 		imageViewleft.setImage(new Image("/images/left.png"));
@@ -86,11 +89,11 @@ public class CreateOrJoinLobbyView implements View {
 		bPane.setCenter(this.createOrJoinLobby());
 		bPane.setLeft(imageViewleft);
 		bPane.setRight(imageViewright);
-
 		return bPane;
 	}
 
 	private VBox createOrJoinLobby() {
+
 		Button joinButton = new Button("join");
 		Button createButton = new Button("create");
 		joinButton.setStyle("-fx-background-color: #CCCCFF; -fx-text-fill: white; -fx-font-size: 20;");
@@ -119,6 +122,7 @@ public class CreateOrJoinLobbyView implements View {
 
 		ObservableList list = vBox.getChildren();
 		list.addAll(iv2, joinButton, createButton);
+
 		return vBox;
 	}
 }

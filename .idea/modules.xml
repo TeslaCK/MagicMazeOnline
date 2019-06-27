@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/MagicMaze.iml" filepath="$PROJECT_DIR$/MagicMaze.iml" />
       <module fileurl="file://$PROJECT_DIR$/MagicMazeOnline.iml" filepath="$PROJECT_DIR$/MagicMazeOnline.iml" />
     </modules>
   </component>

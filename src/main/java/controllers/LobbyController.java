@@ -23,7 +23,6 @@ import views.View;
  * @author C.K
  */
 public class LobbyController implements Controller {
-//	private GameController gameController;
 	private FirebaseService firebaseService;
 	private Stage primaryStage;
 	private SceneManager sceneManager;
@@ -34,7 +33,6 @@ public class LobbyController implements Controller {
 	
 
 	public LobbyController() {
-//		this.gameController = new GameController();
 		firebaseService = new FirebaseService();
 		this.sceneManager = new SceneManager();
 	}

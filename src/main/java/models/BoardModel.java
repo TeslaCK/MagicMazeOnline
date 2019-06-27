@@ -109,7 +109,4 @@ public class BoardModel implements Model {
     private void updateCharacterLocation(int characterID, Location location) {
         //TODO implement here
     }
-
-
-
 }

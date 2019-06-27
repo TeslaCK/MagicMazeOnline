@@ -26,9 +26,9 @@ import javafx.scene.paint.Color;
  */
 
 public class LoginOrRegisterView implements View{
+	private LobbyController lobbyController;
 	private int buttonHeight=25;
 	private int buttonWidth=100;
-	private LobbyController lobbyController;
 	private Stage primaryStage;
 	private SceneManager sceneManager;
 
@@ -37,6 +37,7 @@ public class LoginOrRegisterView implements View{
 		this.sceneManager = new SceneManager();
 		this.lobbyController = new LobbyController();
 	}
+
 	public void update() {
 	}
 	
@@ -55,7 +56,6 @@ public class LoginOrRegisterView implements View{
 		
 		bPane.setCenter(this.createOrJoinLobby());
 	//				bPane.setBottom();
-		
 		return bPane;
 	}
 	
@@ -77,5 +77,3 @@ public class LoginOrRegisterView implements View{
 		return vBox;
 	}
 }
-	
-

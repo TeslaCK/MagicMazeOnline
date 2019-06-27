@@ -68,6 +68,4 @@ public class PlayerInGameModel implements Model{
     public MoveSet getMoveSet(int playerID){
         return moveSets[playerID];
     }
-
-
 }
