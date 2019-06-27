@@ -7,13 +7,21 @@ import views.View;
 /**
  * @author Carl Zee
  */
-public class PlayerInGameModel implements Model{
+public class PlayerInGameModel implements Model {
 
     static PlayerInGameModel playerInGameModel;
 
     int totalPlayers;
     MoveSet[] moveSets;
 
+    /**
+     * Constructor
+     *
+     * @author Carl Zee
+     */
+    public PlayerInGameModel() {
+        //TODO implement here, need to know how many players are playing.
+    }
 
     /**
      * If you call CharacterController.getInstance() it guarantees there is only 1 instance.
@@ -29,6 +37,18 @@ public class PlayerInGameModel implements Model{
         return playerInGameModel;
     }
 
+    /**
+     * This will swap the MoveSets so that every player has a new moveSet.
+     *
+     * @author Carl Zee
+     */
+    public void swapMoveSets() {
+        MoveSet temp = moveSets[0];
+        for (int i = 0; i < totalPlayers - 1; i++) {
+            moveSets[i] = moveSets[i + 1];
+        }
+        moveSets[totalPlayers - 1] = temp;
+    }
 
     /**
      * @param v
@@ -65,7 +85,7 @@ public class PlayerInGameModel implements Model{
      * @return The MoveSet from playerID
      * @author Carl Zee
      */
-    public MoveSet getMoveSet(int playerID){
+    public MoveSet getMoveSet(int playerID) {
         return moveSets[playerID];
     }
 }

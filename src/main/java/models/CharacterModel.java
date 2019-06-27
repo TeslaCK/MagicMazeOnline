@@ -4,6 +4,8 @@ import com.google.cloud.firestore.DocumentSnapshot;
 import resources.supportingClasses.Location;
 import views.View;
 
+import java.util.HashMap;
+
 
 /**
  *
@@ -11,9 +13,31 @@ import views.View;
  */
 public class CharacterModel implements Model {
 
+    //The id's of the characters
+    private static final int GREENID = 0;
+    private static final int PURPLEID = 1;
+    private static final int REDID = 2;
+    private static final int YELLOWID = 3;
+
+    private static final int ISNOTOCCUPIED = -1;
+
     static CharacterModel characterModel;
 
+    // <characterID, playerID> if occupied, <characterID, ISNOTOCCUPIED> if it isn't occupied
+    private HashMap<Integer, Integer> characters;
+
+    /**
+     * Constructor
+     *
+     * @author Carl Zee
+     */
     public CharacterModel() {
+        characters = new HashMap<>();
+        // This will initialise all the characters and they aren't occupied.
+        characters.put(GREENID, ISNOTOCCUPIED);
+        characters.put(PURPLEID, ISNOTOCCUPIED);
+        characters.put(REDID, ISNOTOCCUPIED);
+        characters.put(YELLOWID, ISNOTOCCUPIED);
     }
 
     /**
@@ -77,8 +101,27 @@ public class CharacterModel implements Model {
      * @author Carl Zee
      */
     public void updateCharacterModel(int characterID, int playerID, boolean occupied) {
-        // TODO implement here
+        if (occupied) {
+            characters.replace(characterID, playerID);
+        } else {
+            characters.replace(characterID, -1);
+        }
+        //TODO notify the observers that there is an update in the characterModel
     }
+
+    /**
+     * Checks if a character is free.
+     *
+     * @return Returns true if the character isn't occupied by a player, returns false if otherwise.
+     * @author Carl Zee
+     */
+    public boolean isCharacterFree(int characterID) {
+        if (characters.get(characterID) == ISNOTOCCUPIED) {
+            return true;
+        }
+        return false;
+    }
+
 
     /**
      * This will notify the observers that an character is occupied.

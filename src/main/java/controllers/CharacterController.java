@@ -84,8 +84,10 @@ public class CharacterController implements Controller {
      * @author Carl Zee
      */
     private boolean isCharacterOccupied(int characterID) {
-        // TODO implement here
-        return true;    //TODO
+        if (characterModel.isCharacterFree(characterID)) {
+            return true;
+        };
+        return false;
     }
 
     /**
