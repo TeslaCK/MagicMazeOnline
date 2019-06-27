@@ -35,7 +35,7 @@ public class BoardController implements Controller {
     public static BoardController getInstance() {
         if (boardController == null) {
             boardController = new BoardController();
-            }
+        }
         return boardController;
     }
 
@@ -96,7 +96,8 @@ public class BoardController implements Controller {
 
 
     /**
-     * This will update the new location of an character to the firebase.
+     * This will update the new location of an character to the firebase if the location is free, otherwise it will
+     * call ask moves again.
      *
      * @param characterID The character id of the character.
      * @param location    The new location.
@@ -104,7 +105,7 @@ public class BoardController implements Controller {
      * @author Carl Zee
      */
     public void locationClicked(int characterID, Location location, Location[] locations) {
-        if (boardModel.locationIsFree()) {
+        if (boardModel.locationIsFree(location)) {
             characterLocationToFB(characterID, location);
         } else {
             boardModel.askMoves(locations);

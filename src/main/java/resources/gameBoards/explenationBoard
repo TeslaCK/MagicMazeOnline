@@ -1,6 +1,16 @@
 The first two numbers on top define the size of the board.
+0: Path
 1: Door
 2: Wall
-3: Starting position
-4: Item
-5: Exit
+3: Starting Green
+4: Item Green
+5: Exit Green
+6: Starting Purple
+7: Item Purple
+8: Exit Purple
+9: Starting Red
+10: Item Red
+11: Exit Red
+12: Starting Yellow
+13: Item Yellow
+14: Exit Yellow
