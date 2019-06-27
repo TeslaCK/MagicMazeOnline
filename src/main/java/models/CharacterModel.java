@@ -4,6 +4,11 @@ import com.google.cloud.firestore.DocumentSnapshot;
 import resources.supportingClasses.Location;
 import views.View;
 
+
+/**
+ *
+ * @author Carl Zee
+ */
 public class CharacterModel implements Model {
 
     static CharacterModel characterModel;
@@ -64,7 +69,7 @@ public class CharacterModel implements Model {
     }
 
     /**
-     * This will notify that there is an update in the characterModel.
+     * This will update this model with the new information and notify that there is an update in the characterModel.
      *
      * @param characterID The id of the character to update
      * @param playerID    The id of the player that has the character, -1 for no player
@@ -73,7 +78,6 @@ public class CharacterModel implements Model {
      */
     public void updateCharacterModel(int characterID, int playerID, boolean occupied) {
         // TODO implement here
-        updateCharacterModel(characterID, playerID, occupied);
     }
 
     /**

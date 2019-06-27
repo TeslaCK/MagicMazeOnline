@@ -122,8 +122,10 @@ public class BoardModel implements Model {
      */
     public void calculateMoves(int characterID, MoveSet moveSet) {
         Location[] locations;
+
+
         //TODO implement here
-        //askMoves(locations);
+        // askMoves(locations);
     }
 
     /**
