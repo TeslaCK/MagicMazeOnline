@@ -59,7 +59,7 @@ public class CharacterController implements Controller {
      */
     @Override
     public void registerObserver(View v) {
-        // TODO implement here
+        characterModel.registerObserver(v);
     }
 
     /**

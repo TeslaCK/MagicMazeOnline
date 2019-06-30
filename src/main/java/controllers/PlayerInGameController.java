@@ -1,14 +1,16 @@
 package controllers;
 
+import com.google.cloud.firestore.DocumentSnapshot;
 import models.PlayerInGameModel;
 import resources.supportingClasses.MoveSet;
+import views.View;
 
 /**
  * This is an additional PlayerController that only works in game.
  *
  * @author Carl Zee
  */
-public class PlayerInGameController {
+public class PlayerInGameController implements Controller{
 
     static PlayerInGameController playerInGameController;
     PlayerInGameModel playerInGameModel;
@@ -18,6 +20,22 @@ public class PlayerInGameController {
      */
     private PlayerInGameController() {
         this.playerInGameModel = PlayerInGameModel.getInstance();
+    }
+
+    /**
+     *
+     * @param ds
+     * @author Carl Zee
+     */
+    @Override
+    public void update(DocumentSnapshot ds) {
+        //TODO implement here
+    }
+
+
+    @Override
+    public void registerObserver(View v) {
+        playerInGameModel.registerObserver(v);
     }
 
     /**

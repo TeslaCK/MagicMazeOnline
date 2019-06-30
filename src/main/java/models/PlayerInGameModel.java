@@ -4,6 +4,9 @@ import com.google.cloud.firestore.DocumentSnapshot;
 import resources.supportingClasses.MoveSet;
 import views.View;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author Carl Zee
  */
@@ -11,8 +14,9 @@ public class PlayerInGameModel implements Model {
 
     static PlayerInGameModel playerInGameModel;
 
-    int totalPlayers;
-    MoveSet[] moveSets;
+    private List<View> observers = new ArrayList<View>();
+    private int totalPlayers;
+    private MoveSet[] moveSets;
 
     /**
      * Constructor
@@ -20,8 +24,10 @@ public class PlayerInGameModel implements Model {
      * @author Carl Zee
      */
     public PlayerInGameModel() {
-        //TODO implement here, need to know how many players are playing.
+        this.totalPlayers = 3;
+        //TODO needs to assign movesets
     }
+
 
     /**
      * If you call CharacterController.getInstance() it guarantees there is only 1 instance.
@@ -56,7 +62,7 @@ public class PlayerInGameModel implements Model {
      */
     @Override
     public void registerObserver(View v) {
-        //TODO implement here
+        this.observers.add(v);
     }
 
     /**
@@ -74,7 +80,7 @@ public class PlayerInGameModel implements Model {
      */
     @Override
     public void unregisterObserver(View v) {
-        //TODO implement here
+        this.observers.remove(v);
     }
 
 

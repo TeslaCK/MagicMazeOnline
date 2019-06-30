@@ -57,7 +57,7 @@ public class BoardController implements Controller {
      */
     @Override
     public void registerObserver(View v) {
-        // TODO implement here
+        boardModel.registerObserver(v);
     }
 
     /**

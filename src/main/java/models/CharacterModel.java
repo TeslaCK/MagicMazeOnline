@@ -4,7 +4,9 @@ import com.google.cloud.firestore.DocumentSnapshot;
 import resources.supportingClasses.Location;
 import views.View;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 
 /**
@@ -21,6 +23,7 @@ public class CharacterModel implements Model {
 
     private static final int ISNOTOCCUPIED = -1;
 
+    private List<View> observers = new ArrayList<View>();
     static CharacterModel characterModel;
 
     // <characterID, playerID> if occupied, <characterID, ISNOTOCCUPIED> if it isn't occupied
@@ -60,7 +63,7 @@ public class CharacterModel implements Model {
      */
     @Override
     public void registerObserver(View v) {
-        //TODO implement here
+        this.observers.add(v);
     }
 
     /**
@@ -78,7 +81,7 @@ public class CharacterModel implements Model {
      */
     @Override
     public void unregisterObserver(View v) {
-        //TODO implement here
+        this.observers.remove(v);
     }
 
     /**

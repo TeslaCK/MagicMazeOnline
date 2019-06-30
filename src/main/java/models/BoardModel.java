@@ -7,6 +7,9 @@ import resources.supportingClasses.Location;
 import resources.supportingClasses.MoveSet;
 import views.View;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * This is the boardModel, before you can use it you need to load an board with the loadBoard(filePath) function.
  *
@@ -29,6 +32,7 @@ public class BoardModel implements Model {
     private static final int TOTALCHARACTERS = 4;
 
 
+    public List<View> observers = new ArrayList<View>();
     static BoardModel boardModel;
     int[][] board; //board[y][x]
     CharacterLocation[] characterLocation = new CharacterLocation[TOTALCHARACTERS];
@@ -62,7 +66,7 @@ public class BoardModel implements Model {
      */
     @Override
     public void registerObserver(View v) {
-        //TODO implement here
+        this.observers.add(v);
     }
 
     /**
@@ -71,7 +75,7 @@ public class BoardModel implements Model {
      */
     @Override
     public void unregisterObserver(View v) {
-        //TODO implement here
+        this.observers.remove(v);
     }
 
     /**
