@@ -33,6 +33,20 @@ public class MoveSet {
     }
 
     /**
+     * This will return a Move of the respective index.
+     *
+     * @param index Index of the move that it returns.
+     * @return Returns a Move with the respective index.
+     * @author Carl Zee
+     */
+    public Move getMove(int index) {
+        if (index >= 0 && index < numberOfMOves) {
+            return moves[index];
+        }
+        return null;
+    }
+
+    /**
      * This will return the moves in this moveSet.
      *
      * @return Return the moves in this moveSet
@@ -56,7 +70,7 @@ public class MoveSet {
      * @param totalPlayers The number of moveSets.
      * @author Carl Zee
      */
-    public MoveSet[] initializeStartingMoveSets(int totalPlayers) {
+    public static MoveSet[] initializeStartingMoveSets(int totalPlayers) {
         if (totalPlayers > 1 && totalPlayers < 9) {
             MoveSet[] moveSets = new MoveSet[totalPlayers];
             switch (totalPlayers) {

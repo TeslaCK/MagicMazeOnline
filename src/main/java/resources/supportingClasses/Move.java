@@ -11,7 +11,7 @@ public class Move {
     private String direction;
 
     /**
-     * Default constructor
+     * Private constructor what will initialize the direction.
      *
      * @author Carl Zee
      */
@@ -98,6 +98,12 @@ public class Move {
         return move;
     }
 
+    /**
+     * Gives the direction in upperCASE.
+     * The directions can be: UP, RIGHT, DOWN, LEFT, ESCALATOR, PORTAL, EXPLORE.
+     *
+     * @return Returns the direction.
+     */
     public String getDirection() {
         return direction;
     }

@@ -35,7 +35,7 @@ public class BoardModel implements Model {
     public List<View> observers = new ArrayList<View>();
     static BoardModel boardModel;
     int[][] board; //board[y][x]
-    CharacterLocation[] characterLocation = new CharacterLocation[TOTALCHARACTERS];
+    CharacterLocation[] characterLocations = new CharacterLocation[TOTALCHARACTERS];
 
     /**
      * Default Constructor
@@ -93,16 +93,16 @@ public class BoardModel implements Model {
         for (int y = 0; y < board.length; y++) {
             for (int x = 0; x < board.length; x++) {
                 if (board[y][x] == STARTINGLOCATIONGREEN) {
-                    characterLocation[GREENID] = new CharacterLocation(GREENID, new Location(x, y));
+                    characterLocations[GREENID] = new CharacterLocation(GREENID, new Location(x, y));
                 }
                 if (board[y][x] == STARTINGLOCATIONPURPLE) {
-                    characterLocation[YELLOWID] = new CharacterLocation(PURPLEID, new Location(x, y));
+                    characterLocations[PURPLEID] = new CharacterLocation(PURPLEID, new Location(x, y));
                 }
                 if (board[y][x] == STARTINGLOCATIONGRED) {
-                    characterLocation[YELLOWID] = new CharacterLocation(REDID, new Location(x, y));
+                    characterLocations[REDID] = new CharacterLocation(REDID, new Location(x, y));
                 }
                 if (board[y][x] == STARTINGLOCATIONYELLOW) {
-                    characterLocation[YELLOWID] = new CharacterLocation(YELLOWID, new Location(x, y));
+                    characterLocations[YELLOWID] = new CharacterLocation(YELLOWID, new Location(x, y));
                 }
             }
         }
@@ -125,12 +125,69 @@ public class BoardModel implements Model {
      * @author Carl Zee
      */
     public void calculateMoves(int characterID, MoveSet moveSet) {
-        Location[] locations;
+        List<Location> listLocations = new ArrayList<Location>(1);
 
+        int currentX = characterLocations[characterID].getLocation().getX();
+        int currentY = characterLocations[characterID].getLocation().getY();
+        int checker;
 
-        //TODO implement here
-        // askMoves(locations);
+        // Moving to the current location of the character is a legal move
+        listLocations.add(new Location(currentX, currentY));
+
+        //Checks for each direction if there is a possible path.
+        for (int i = 0; i < moveSet.getNumberOfMoves(); i++) {
+            switch (moveSet.getMove(i).getDirection()) {
+                case "UP":
+                    for (int y = currentY; y >= 0; y--) {
+                        checker = board[y][currentX];
+                        if (checker == 0 || checker == 1) {
+                            listLocations.add(new Location(currentX, y));
+                        }
+                    }
+                    break;
+                case "RIGHT":
+                    for (int x = currentX; x <= board[currentY].length; x++) {
+                        checker = board[currentY][x];
+                        if (checker == 0 || checker == 1) {
+                            listLocations.add(new Location(x, currentY));
+                        }
+                    }
+                    break;
+                case "DOWN":
+                    for (int y = currentY; y <= board.length; y++) {
+                        checker = board[y][currentX];
+                        if (checker == 0 || checker == 1) {
+                            listLocations.add(new Location(currentX, y));
+                        }
+                    }
+                    break;
+                case "LEFT":
+                    for (int x = currentX; x >= 0; x--) {
+                        checker = board[currentY][x];
+                        if (checker == 0 || checker == 1) {
+                            listLocations.add(new Location(x, currentY));
+                        }
+                    }
+                    break;
+                case "ESCALATOR":
+                    //TODO
+                    break;
+                case "PORTAL":
+                    //TODO
+                    break;
+                case "EXPLORE":
+                    //TODO
+                    break;
+            }
+        }
+
+        //Converts the list into an Location[]
+        Location[] locations = new Location[listLocations.size()];
+        locations = listLocations.toArray(locations);
+        askMoves(locations);
     }
+
+
 
     /**
      * This method will ask the destination from the boardView.
@@ -150,8 +207,8 @@ public class BoardModel implements Model {
      */
     public boolean locationIsFree(Location location) {
         for (int i = 0; i < TOTALCHARACTERS; i++) {
-            if (characterLocation[i] != null) {
-                if (characterLocation[i].getLocation().equals(location)) {
+            if (characterLocations[i] != null) {
+                if (characterLocations[i].getLocation().equals(location)) {
                     return false;
                 }
             }
@@ -166,7 +223,7 @@ public class BoardModel implements Model {
      * @param location    The new location of characterID
      */
     private void updateCharacterLocation(int characterID, Location location) {
-        characterLocation[characterID].setLocation(location);
+        characterLocations[characterID].setLocation(location);
         //TODO update the views.
     }
 }

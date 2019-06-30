@@ -69,7 +69,6 @@ public class PlayerInGameController implements Controller{
      * @param playerID The id of the player that it get's the moveSet from.
      */
 	public MoveSet grabMoveSet(int playerID) {
-		//TODO implement here
-		return null;
+		return playerInGameModel.getMoveSet(playerID);
 	}
 }

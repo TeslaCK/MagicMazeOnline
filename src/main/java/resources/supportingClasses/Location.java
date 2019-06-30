@@ -37,7 +37,7 @@ public class Location {
 
     /**
      * Checks if a object is equal to a point.
-     * @param obj The obj that is compared to this
+     * @param obj The object that is compared to this
      * @return Return true if obj isn't null, obj is a point and the x and y are the same.
      */
     @Override

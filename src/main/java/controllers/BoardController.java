@@ -2,7 +2,6 @@ package controllers;
 
 import com.google.cloud.firestore.DocumentSnapshot;
 import models.BoardModel;
-import models.CharacterModel;
 import resources.supportingClasses.Location;
 import views.View;
 import resources.supportingClasses.MoveSet;
