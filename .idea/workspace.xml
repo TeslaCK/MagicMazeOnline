@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34868645-64ea-4d68-86c3-13c315dca80b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/resources/gameBoards/startingBoard1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/resources/gameBoards/startingCharacters1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/SceneManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/SceneManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/gameBoards/startingBoard.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/gameBoards/startingBoard.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/supportingClasses/Buttons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/supportingClasses/Buttons.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/views/BoardView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/views/BoardView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/views/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/views/GameView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controllers/BoardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/BoardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controllers/CharacterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/CharacterController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controllers/PlayerInGameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/PlayerInGameController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controllers/SceneManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/SceneManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/BoardModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/BoardModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/CharacterModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/CharacterModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/PlayerInGameModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/PlayerInGameModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/resources/supportingClasses/Buttons.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/supportingClasses/Buttons.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/resources/supportingClasses/Move.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/supportingClasses/Move.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/resources/supportingClasses/MoveSet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/supportingClasses/MoveSet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/views/BoardView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/BoardView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/views/GameView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/GameView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/configurations/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/configurations/Database.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,14 +55,27 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/resources/supportingClasses/Buttons.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
+            <state relative-caret-position="204">
               <caret line="32" column="85" selection-start-line="32" selection-start-column="85" selection-end-line="32" selection-end-column="85" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#597#612#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/configurations/Database.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="23" column="71" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
+              <folding>
+                <element signature="e#1607#1608#0" expanded="true" />
+                <element signature="e#1637#1638#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -125,18 +119,6 @@
               <folding>
                 <element signature="e#2956#2957#0" expanded="true" />
                 <element signature="e#2996#2997#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/views/BoardView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="64" column="15" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -210,6 +192,7 @@
         <option value="$PROJECT_DIR$/src/main/java/resources/gameBoards/startingCharacters1.txt" />
         <option value="$PROJECT_DIR$/src/main/java/resources/gameBoards/startingBoard1.txt" />
         <option value="$PROJECT_DIR$/src/main/java/resources/supportingClasses/Buttons.java" />
+        <option value="$PROJECT_DIR$/src/main/java/configurations/Database.java" />
       </list>
     </option>
   </component>
@@ -425,12 +408,12 @@
       <workItem from="1561625823308" duration="4891000" />
       <workItem from="1561631973364" duration="11462000" />
       <workItem from="1561725597789" duration="334000" />
-      <workItem from="1561902000536" duration="26430000" />
+      <workItem from="1561902000536" duration="26720000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50427000" />
+    <option name="totallyTimeSpent" value="50717000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -445,7 +428,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26279318" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26279318" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -455,7 +438,7 @@
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -606,17 +589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/configurations/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="45" column="4" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
-          <folding>
-            <element signature="e#1607#1608#0" expanded="true" />
-            <element signature="e#1637#1638#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -913,11 +885,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/resources/supportingClasses/Buttons.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
+        <state relative-caret-position="204">
           <caret line="32" column="85" selection-start-line="32" selection-start-column="85" selection-end-line="32" selection-end-column="85" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#597#612#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/configurations/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="23" column="71" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
+          <folding>
+            <element signature="e#1607#1608#0" expanded="true" />
+            <element signature="e#1637#1638#0" expanded="true" />
           </folding>
         </state>
       </provider>
