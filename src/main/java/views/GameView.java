@@ -2,27 +2,11 @@ package views;
 
 import com.google.cloud.firestore.DocumentSnapshot;
 
-import controllers.Controller;
 import controllers.GameController;
-import controllers.LobbyController;
-import javafx.geometry.Insets;
-import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.layout.Border;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.BorderStroke;
-import javafx.scene.layout.BorderStrokeStyle;
-import javafx.scene.layout.BorderWidths;
-import javafx.scene.layout.CornerRadii;
-import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import models.GameModel;
-import models.LobbyModel;
-import models.Model;
+
 import resources.supportingClasses.Buttons;
 import shared.Observer;
 
@@ -75,16 +59,14 @@ public class GameView implements Observer, View {
         BoardView boardView = new BoardView();
 //        , playerView.playerScoreAndRankingPane(), playerView.playerPane(), boardView.mainBoardPane()
 
-
         Buttons buttons = new Buttons();
         buttons.readFile();
 
         try {
-            pane.getChildren().addAll(buttons.tileButtons());
+            pane.getChildren().add(buttons.tileButtons());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-
 
 
         return pane;

@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34868645-64ea-4d68-86c3-13c315dca80b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/resources/supportingClasses/Buttons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/supportingClasses/Buttons.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/views/BoardView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/views/BoardView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/views/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/views/GameView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/resources/supportingClasses/Buttons.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/supportingClasses/Buttons.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/BoardView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/BoardView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/GameView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/GameView.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,26 +26,31 @@
     <session id="1322211632">
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CLASS" value="3" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="3" />
-          <entry key="JAVA" value="55" />
+          <entry key="JAVA" value="105" />
           <entry key="JSON" value="1" />
-          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="PLAIN_TEXT" value="7" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="14480" />
+          <entry key="JAVA" value="17389" />
           <entry key="PLAIN_TEXT" value="226" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.15" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
     </session>
@@ -50,8 +60,89 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/resources/supportingClasses/Buttons.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            <state relative-caret-position="-155">
+              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/application/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="726">
+              <caret line="33" column="45" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/views/CreateOrJoinLobbyView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1826">
+              <caret line="83" column="29" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/models/GameModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1782">
+              <caret line="81" column="46" selection-start-line="81" selection-start-column="46" selection-end-line="81" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/models/LobbyModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1210">
+              <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/views/GameView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3410">
+              <caret line="155" column="20" selection-start-line="155" selection-start-column="20" selection-end-line="155" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/GameController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="836">
+              <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/LobbyController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="924">
+              <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/views/LobbyView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1254">
+              <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/views/BoardView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="638">
+              <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -99,9 +190,7 @@
         <option value="$PROJECT_DIR$/src/main/java/models/Model.java" />
         <option value="$PROJECT_DIR$/src/main/java/resources/gameBoards/startingBoard.txt" />
         <option value="$PROJECT_DIR$/src/main/java/resources/supportingClasses/Location.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/Main.java" />
         <option value="$PROJECT_DIR$/MagicMaze.iml" />
-        <option value="$PROJECT_DIR$/src/main/java/views/LobbyView.java" />
         <option value="$PROJECT_DIR$/src/main/java/views/PlayerView.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/SceneManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/views/LoginAndRegisterView.java" />
@@ -115,9 +204,14 @@
         <option value="$PROJECT_DIR$/src/main/java/views/LoginOrRegisterView.java" />
         <option value="$PROJECT_DIR$/src/main/java/views/CreateOrJoinLobbyView.java" />
         <option value="$PROJECT_DIR$/src/main/java/configurations/Database.java" />
-        <option value="$PROJECT_DIR$/src/main/java/resources/supportingClasses/Buttons.java" />
-        <option value="$PROJECT_DIR$/src/main/java/views/GameView.java" />
         <option value="$PROJECT_DIR$/src/main/java/views/BoardView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resources/supportingClasses/ButtonsTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resources/supportingClasses/ButtonsLocation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/views/GameView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/views/LobbyView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/LobbyModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resources/supportingClasses/Buttons.java" />
       </list>
     </option>
   </component>
@@ -143,18 +237,37 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>EqualsBetweenInconvertibleTypes</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -186,48 +299,7 @@
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MagicMazeOnline" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="MagicMaze" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="configurations" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MagicMazeOnline" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="MagicMaze" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="controllers" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MagicMazeOnline" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="MagicMaze" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="models" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MagicMazeOnline" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="MagicMaze" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MagicMazeOnline" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="MagicMaze" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="css" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="MagicMazeOnline" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -247,26 +319,11 @@
               <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="supportingClasses" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
-            <path>
-              <item name="MagicMazeOnline" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="MagicMaze" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="services" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MagicMazeOnline" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="MagicMaze" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -274,8 +331,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561469049565" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Slegt" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561907562024" />
+    <property name="last_opened_file_path" value="$USER_HOME$/donkey-kong" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -359,7 +416,10 @@
       <workItem from="1561021848689" duration="9119000" />
       <workItem from="1561207573373" duration="602000" />
       <workItem from="1561360762794" duration="14755000" />
-      <workItem from="1561458652581" duration="8736000" />
+      <workItem from="1561458652581" duration="16642000" />
+      <workItem from="1561635665699" duration="6084000" />
+      <workItem from="1561652473139" duration="11356000" />
+      <workItem from="1561912500444" duration="3250000" />
     </task>
     <servers />
   </component>
@@ -375,10 +435,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45276000" />
+    <option name="totallyTimeSpent" value="73872000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -386,22 +446,23 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.2342282" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.19060403" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="simpleUML" order="7" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.32624114" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.32855093" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.3177305" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3248227" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32424676" />
+      <window_info anchor="bottom" id="Dependency Viewer" order="13" weight="0.32998565" />
       <window_info anchor="right" id="Theme Preview" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -413,7 +474,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
       <window_info anchor="right" id="PlantUML" order="9" />
       <window_info anchor="right" id="Maven Projects" order="10" />
-      <window_info anchor="right" id="SciView" order="11" />
+      <window_info anchor="right" id="SciView" order="11" weight="0.32871014" />
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="0" />
@@ -458,15 +519,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/voorbeeld.iml" />
-    <entry file="file://$PROJECT_DIR$/src/controllers/RegisterController.java" />
-    <entry file="file://$PROJECT_DIR$/src/models/PlayerModel.java" />
-    <entry file="file://$PROJECT_DIR$/src/controllers/PauzeMenuController.java" />
-    <entry file="file://$PROJECT_DIR$/src/models/LoginModel.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/src/models/CharacterModel.java" />
-    <entry file="file://$PROJECT_DIR$/src/models/BoardModel.java" />
-    <entry file="file://$PROJECT_DIR$/src/views/MainMenuView.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Thread.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/javafx-src.zip!/com/sun/glass/ui/win/WinApplication.java" />
     <entry file="file://$PROJECT_DIR$/src/controllers/BoardController.java" />
@@ -491,23 +543,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shared/Observable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/CharacterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-706">
-          <caret line="69" column="7" lean-forward="true" selection-start-line="69" selection-start-column="7" selection-end-line="69" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/nl/hsleiden/iipsen16/MagicMaze/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -526,20 +561,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="592">
           <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#409#410#0" expanded="true" />
-            <element signature="e#481#482#0" expanded="true" />
-            <element signature="e#1212#1213#0" expanded="true" />
-            <element signature="e#1273#1274#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -547,20 +568,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1232">
           <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resources/supportingClasses/Location.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
@@ -575,13 +582,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
           <caret line="126" column="29" selection-start-line="126" selection-start-column="29" selection-end-line="126" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/views/JoinLobbyView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3278">
-          <caret line="149" selection-end-line="158" />
         </state>
       </provider>
     </entry>
@@ -613,97 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/BoardController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2002">
-          <caret line="112" column="25" lean-forward="true" selection-start-line="112" selection-start-column="25" selection-end-line="112" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resources/gameBoards/startingBoard.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="25" selection-end-line="10" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/views/LoginAndRegisterView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/views/PlayerView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-897">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/views/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/views/GameView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1342">
-          <caret line="82" column="59" selection-start-line="82" selection-start-column="59" selection-end-line="82" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/views/BoardView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2055">
-          <caret line="96" column="20" lean-forward="true" selection-start-line="54" selection-start-column="4" selection-end-line="96" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/views/CreateOrJoinLobbyView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-201">
-          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/views/LobbyView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="183" column="13" lean-forward="true" selection-start-line="183" selection-start-column="13" selection-end-line="183" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/application/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198">
-          <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/LobbyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2003">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/SceneManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="52" column="28" lean-forward="true" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/GameController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
-          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/GameBoardModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -725,31 +634,217 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/supportingClasses/ButtonsTest.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/javafx-src.zip!/javafx/scene/control/Button.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/supportingClasses/ButtonsLocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/gameBoards/explenationBoard">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/gameBoards/startingBoard.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/cloud/google-cloud-firestore/0.61.0-beta/google-cloud-firestore-0.61.0-beta.jar!/com/google/cloud/firestore/DocumentSnapshot.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/BoardModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1823">
-          <caret line="90" column="5" lean-forward="true" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
+        <state relative-caret-position="261">
+          <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/supportingClasses/Location.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/CharacterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/BoardController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-770">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/SceneManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/cloud/google-cloud-firestore/0.61.0-beta/google-cloud-firestore-0.61.0-beta.jar!/com/google/cloud/firestore/annotation/Exclude.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/cloud/google-cloud-firestore/0.61.0-beta/google-cloud-firestore-0.61.0-beta-sources.jar!/com/google/cloud/firestore/annotation/Exclude.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/shared/Observable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/views/PlayerView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="36" selection-start-line="36" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/views/JoinLobbyView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="944">
+          <caret line="133" lean-forward="true" selection-start-line="133" selection-end-line="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/views/LoginAndRegisterView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1496">
+          <caret line="62" column="53" lean-forward="true" selection-start-line="62" selection-start-column="53" selection-end-line="62" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/views/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/javafx-src.zip!/javafx/collections/ObservableList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/javafx-src.zip!/javafx/scene/layout/BorderPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="140" column="13" selection-start-line="140" selection-start-column="13" selection-end-line="140" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/views/CreateOrJoinLobbyView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1826">
+          <caret line="83" column="29" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/GameModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="99" column="26" lean-forward="true" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="26" />
+        <state relative-caret-position="1782">
+          <caret line="81" column="46" selection-start-line="81" selection-start-column="46" selection-end-line="81" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/LobbyModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        <state relative-caret-position="1210">
+          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/views/GameView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3410">
+          <caret line="155" column="20" selection-start-line="155" selection-start-column="20" selection-end-line="155" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/GameController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/LobbyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/views/LobbyView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1254">
+          <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/views/BoardView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="33" column="45" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/resources/supportingClasses/Buttons.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        <state relative-caret-position="-155">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
         </state>
       </provider>
     </entry>
