@@ -34,7 +34,7 @@ public class BoardModel implements Model {
 
     public List<View> observers = new ArrayList<View>();
     static BoardModel boardModel;
-    int[][] board; //board[y][x]
+    private int[][] board; //board[y][x]
     CharacterLocation[] characterLocations = new CharacterLocation[TOTALCHARACTERS];
 
     /**
@@ -109,12 +109,71 @@ public class BoardModel implements Model {
     }
 
     /**
-     * @param ds
+     * This will load in this DocumentSnapshot and notify all the observers.
+     *
+     * @param ds The DocumentSnapshot.
      * @author Carl Zee
      */
     @Override
     public void notifyObservers(DocumentSnapshot ds) {
-        //TODO implement here
+        BoardModel boardModel = ds.toObject(BoardModel.class);
+        this.setBoard(boardModel.getBoard());
+        this.setCharacterLocations(boardModel.getCharacterLocations());
+        for (int i = 0; i < this.observers.size(); i++) {
+            this.observers.get(i).update();
+        }
+    }
+
+    /**
+     * Getter for characterLocations.
+     *
+     * @return The CharacterLocations.
+     * @Carl Zee
+     */
+    public CharacterLocation[] getCharacterLocations() {
+        return characterLocations;
+    }
+
+
+    /**
+     * The getter for board.
+     *
+     * @return Returns board[y][x].
+     * @author Carl Zee
+     */
+    public int[][] getBoard() {
+        return this.board;
+    }
+
+    /**
+     * The setter for characterLocations.
+     *
+     * @param characterLocations The new value's of the characterLocations.
+     * @author Carl Zee
+     */
+    public void setCharacterLocations(CharacterLocation[] characterLocations) {
+        for(int i = 0; i < TOTALCHARACTERS; i++) {
+            this.characterLocations[i] = characterLocations[i];
+        }
+    }
+
+    /**
+     * The Setter for board[y][x].
+     * This only works for a board of the same size, otherwise it will print an error.
+     *
+     * @param board The new board[y][x].
+     * @author Carl Zee
+     */
+    private void setBoard(int[][] board) {
+        if (board.length == this.board.length && board[0].length == this.board[0].length) {
+            for (int y = 0; y < board.length; y++) {
+                for (int x = 0; x < board[0].length; x++) {
+                    this.board[y][x] = board[y][x];
+                }
+            }
+        } else {
+            System.out.println("models/LobbyModel: setBoard error, board size is not the same");
+        }
     }
 
     /**
@@ -188,7 +247,6 @@ public class BoardModel implements Model {
     }
 
 
-
     /**
      * This method will ask the destination from the boardView.
      *
@@ -223,7 +281,8 @@ public class BoardModel implements Model {
      * @param location    The new location of characterID
      */
     private void updateCharacterLocation(int characterID, Location location) {
-        characterLocations[characterID].setLocation(location);
+        this.characterLocations[characterID].setLocation(location);
+
         //TODO update the views.
     }
 }

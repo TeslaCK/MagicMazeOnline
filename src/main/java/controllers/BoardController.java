@@ -18,6 +18,8 @@ public class BoardController implements Controller {
 
     /**
      * The Construnctor
+     *
+     * @author Carl Zee
      */
     private BoardController() {
         boardController.boardModel = BoardModel.getInstance();
@@ -40,12 +42,15 @@ public class BoardController implements Controller {
 
 
     /**
+     * This will update the characterModel.
+     *
      * @param ds The DocumentSnapshot.
      * @author Carl Zee
      */
     @Override
     public void update(DocumentSnapshot ds) {
-        // TODO implement here
+        System.out.println("BoardController gets an update");
+        this.boardModel.notifyObservers(ds);
     }
 
     /**

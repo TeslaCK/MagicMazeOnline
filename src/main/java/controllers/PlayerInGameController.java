@@ -23,13 +23,14 @@ public class PlayerInGameController implements Controller{
     }
 
     /**
+     * This will update the characterModel.
      *
-     * @param ds
+     * @param ds The DocumentSnapshot.
      * @author Carl Zee
      */
     @Override
     public void update(DocumentSnapshot ds) {
-        //TODO implement here
+        playerInGameModel.notifyObservers(ds);
     }
 
 

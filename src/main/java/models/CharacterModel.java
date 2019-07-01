@@ -66,13 +66,42 @@ public class CharacterModel implements Model {
         this.observers.add(v);
     }
 
+
     /**
-     * @param ds
+     * This will load in this DocumentSnapshot and notify all the observers.
+     *
+     * @param ds The DocumentSnapshot.
      * @author Carl Zee
      */
     @Override
     public void notifyObservers(DocumentSnapshot ds) {
-        //TODO implement here
+        CharacterModel characterModel = ds.toObject(CharacterModel.class);
+        this.setCharacters(characterModel.getCharacters());
+        for (int i = 0; i < this.observers.size(); i++) {
+            this.observers.get(i).update();
+        }
+    }
+
+    /**
+     * The getter of characters.
+     *
+     * @return Returns characters.
+     * @author Carl Zee
+     */
+    public HashMap<Integer, Integer> getCharacters() {
+        return characters;
+    }
+
+    /**
+     * The setter of characters.
+     *
+     * @param characters The new values of the characters.
+     * @author Carl Zee
+     */
+    public void setCharacters(HashMap<Integer, Integer> characters) {
+        for (int i = 0; i < characters.size(); i++) {
+            this.characters.replace(i, characters.get(i));
+        }
     }
 
     /**

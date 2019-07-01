@@ -43,12 +43,15 @@ public class CharacterController implements Controller {
 
 
     /**
+     * This will update the characterModel.
+     *
      * @param ds The DocumentSnapshot.
      * @author Carl Zee
      */
     @Override
     public void update(DocumentSnapshot ds) {
-        // TODO implement here
+        System.out.println("CharacterModel gets an update.");
+        this.characterModel.notifyObservers(ds);
     }
 
     /**
@@ -130,12 +133,10 @@ public class CharacterController implements Controller {
      *
      * @param characterID The ID of the character that can be moved.
      * @param moveSet     The moveSet that will be used in calculating the possible locations.
-     * @param x           The x coördinate from the starting location.
-     * @param y           The y coördinate from the starting location.
      * @author Carl Zee
      */
-    public void calculateMoves(int characterID, MoveSet moveSet, int x, int y) {
-        //TODO implement here
+    public void calculateMoves(int characterID, MoveSet moveSet) {
+        boardController.calculateMoves(characterID, moveSet);
     }
 
     /**
@@ -156,6 +157,6 @@ public class CharacterController implements Controller {
      * @author Carl Zee
      */
     public void characterLocation(int characterID, Location location) {
-        //TODO implement here
+        boardController.characterLocationToFB(characterID, location);
     }
 }

@@ -60,13 +60,46 @@ public class PlayerInGameModel implements Model {
         this.observers.add(v);
     }
 
+
     /**
-     * @param ds
+     * This will load in this DocumentSnapshot and notify all the observers.
+     *
+     * @param ds The DocumentSnapshot.
      * @author Carl Zee
      */
     @Override
     public void notifyObservers(DocumentSnapshot ds) {
-        //TODO implement here
+        PlayerInGameModel playerInGameModel = ds.toObject(PlayerInGameModel.class);
+        this.setMoveSets(playerInGameModel.getMoveSets());
+        for (int i = 0; i < observers.size(); i++) {
+            observers.get(i).update();
+        }
+    }
+
+    /**
+     * Getter for moveSets.
+     *
+     * @return Returns moveSets<integer><integer>.
+     * @author Carl Zee
+     */
+    public HashMap<Integer, MoveSet> getMoveSets() {
+        return moveSets;
+    }
+
+    /**
+     * The setter for moveSets.
+     *
+     * @param moveSets The new moveSets.
+     * @author Carl Zee
+     */
+    public void setMoveSets(HashMap<Integer, MoveSet> moveSets) {
+        if (this.moveSets.size() == moveSets.size()) {
+            for (int i = 0; i < moveSets.size(); i++) {
+                this.moveSets.replace(i, moveSets.get(i));
+            }
+        } else {
+            System.out.println("models/PlayerInGameModel/setMoveSets: This moveSet isn't the same size.");
+        }
     }
 
     /**

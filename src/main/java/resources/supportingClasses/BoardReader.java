@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class BoardReader {
 
-    int[][] board;
+    int[][] board; //game board [y][x]
 
     /**
      * This is the constructor and will read in the board.
