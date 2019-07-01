@@ -50,16 +50,10 @@ public class GameView implements Observer, View {
         //eruit
         PlayerView playerView = new PlayerView();
         BoardView boardView = new BoardView();
-//        , playerView.playerScoreAndRankingPane(), playerView.playerPane(), boardView.mainBoardPane()
 
         Buttons buttons = new Buttons();
-        buttons.readFile();
 
-        try {
-            pane.getChildren().add(buttons.buttons());
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+        pane.getChildren().add(buttons.buttons());
 
 
         return pane;
