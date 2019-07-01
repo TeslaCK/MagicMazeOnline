@@ -9,9 +9,10 @@ import views.LobbyView;
 
 import java.io.FileNotFoundException;
 import java.net.MalformedURLException;
+//import views.PlayCardXTimesView;
+
 
 /**
- *
  * @author C.K
  */
 public class SceneManager {
@@ -19,7 +20,6 @@ public class SceneManager {
 
 	public SceneManager() {
 	}
-
 
 
 	public Stage switchToGameView(Stage primaryStage) {
@@ -38,7 +38,6 @@ public class SceneManager {
 	}
 
 
-
 	public Stage switchToJoinLobbyView(Stage primaryStage) {
 		JoinLobbyView joinLobbyView = new JoinLobbyView(primaryStage);
 		joinLobbyView.loadPrimaryStageWithPane(primaryStage);
@@ -47,11 +46,12 @@ public class SceneManager {
 	}
 
 
-
 	public Stage switchToCreateOrJoinLobbyView(Stage primaryStage) throws FileNotFoundException, MalformedURLException {
 		CreateOrJoinLobbyView createOrJoinLobbyView = new CreateOrJoinLobbyView(primaryStage);
 		createOrJoinLobbyView.loadPrimaryStageWithPane(primaryStage);
 
 		return primaryStage;
 	}
+
+
 }
