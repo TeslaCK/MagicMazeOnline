@@ -26,29 +26,16 @@ public class Buttons {
     private BoardReader boardReader = new BoardReader(filePath);
     int[][] boardArray = boardReader.getBoard();
 
-<<<<<<< HEAD
 
-    //Method takes the file that contains elements, and loops through the list.
-    public VBox createButtons() {
-        VBox vBox = new VBox();
-
-        HBox[] hBoxes = new HBox[boardArray.length];
-
-=======
     //Method takes the file that contains elements, and loops through the list.
     public VBox buttons() {
         VBox vBox = new VBox();
         HBox[] hBoxes = new HBox[boardArray.length];
->>>>>>> 57851803eba6e44d3aa7e13c6370c198cbf3ee00
         for (int i = 0; i < boardArray.length; i++) {
             hBoxes[i] = new HBox();
         }
         for (int y = 0; y < boardArray.length; y++) {
             for (int x = 0; x < boardArray[y].length; x++) {
-<<<<<<< HEAD
-                System.out.print(boardArray[y][x] + " ");
-=======
->>>>>>> 57851803eba6e44d3aa7e13c6370c198cbf3ee00
                 Button tempButton;
                 switch (boardArray[y][x]) {
                     case 0:
@@ -78,26 +65,14 @@ public class Buttons {
                         tempButton = new Button("-1");
                         break;
                 }
-<<<<<<< HEAD
 
-                hBoxes[y].getChildren().add(tempButton);
-            }
-            System.out.println("\n");
-
-        }
-        for (int i = 0; i < hBoxes.length; i++) {
-            vBox.getChildren().add(hBoxes[i]);
-        }
-
-
-=======
                 hBoxes[y].getChildren().add(tempButton);
             }
         }
         for (int i = 0; i < hBoxes.length; i++) {
             vBox.getChildren().add(hBoxes[i]);
         }
->>>>>>> 57851803eba6e44d3aa7e13c6370c198cbf3ee00
+
         return vBox;
     }
 }

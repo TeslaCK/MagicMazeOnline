@@ -52,14 +52,10 @@ public class GameView implements Observer, View {
         BoardView boardView = new BoardView();
 
         Buttons buttons = new Buttons();
-<<<<<<< HEAD
-        pane.getChildren().add(buttons.createButtons());
 
-
-=======
 
         pane.getChildren().add(buttons.buttons());
->>>>>>> 57851803eba6e44d3aa7e13c6370c198cbf3ee00
+
 
 
         return pane;
