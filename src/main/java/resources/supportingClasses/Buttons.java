@@ -1,11 +1,7 @@
 package resources.supportingClasses;
 
-<<<<<<< HEAD
-import javafx.scene.control.Button;
-import javafx.scene.layout.*;
 
-import java.io.*;
-=======
+import com.sun.xml.internal.bind.v2.TODO;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
@@ -13,7 +9,6 @@ import javafx.scene.layout.*;
 import models.BoardModel;
 import views.GameView;
 
->>>>>>> 39c4a6e56ba41037ce4d1bc5f553f44e4e0fc6a6
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -54,6 +49,14 @@ public class Buttons {
     private final String TILESTYLEITEMYELLOW = "-fx-background-color: #00FF00; ";
     private final String TILESTYLEEXITYELLOW = "-fx-background-color: #00FF00; ";
 
+    /*
+    TODO @Tessa
+    Buttons mogen iets groter       -> Button resize
+    Afbeeldingen                    -> Afbeeldingen toevoegen aan buttons
+    Kan worden ingedrukt lijntje    -> Clickable buttons zichbaarder maken door bijv en randje
+
+     */
+
     //Path of the gameBoard and characterLocations
     private final String BOARDPATH = "src\\main\\java\\resources\\gameBoards\\startingBoard1.txt";
     private final String CHARACTERSPATH = "src\\main\\java\\resources\\gameBoards\\startingCharacters1.txt";
@@ -73,10 +76,7 @@ public class Buttons {
         boardModel.setUpCharacterLocations(CHARACTERSPATH);
     }
 
-<<<<<<< HEAD
 
-    //Method takes the file that contains elements, and loops through the list.
-=======
     /**
      * This will create a VBOX with a button for each tile of the board.
      * The buttons will call GameView.buttonClicked(x, y, button) when there are clicked.
@@ -84,7 +84,6 @@ public class Buttons {
      * @return Returns a VBox with a button for each boardTile
      * @author Carl Zee & Tessa van de Wolf
      */
->>>>>>> 39c4a6e56ba41037ce4d1bc5f553f44e4e0fc6a6
     public VBox buttons() {
         //initialises variables
         VBox vBox = new VBox();
@@ -157,9 +156,7 @@ public class Buttons {
                         tempButton = new Button("-1");
                         break;
                 }
-<<<<<<< HEAD
 
-=======
                 //stores the coordinates
                 tempButton.setId(x + " " + y);
                 Button finalTempButton = tempButton;
@@ -171,7 +168,6 @@ public class Buttons {
                         GameView.buttonClicked(scanner.nextInt(), scanner.nextInt(), finalTempButton);
                     }
                 });
->>>>>>> 39c4a6e56ba41037ce4d1bc5f553f44e4e0fc6a6
                 hBoxes[y].getChildren().add(tempButton);
             }
         }

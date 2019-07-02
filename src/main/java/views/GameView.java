@@ -2,13 +2,18 @@ package views;
 
 import com.google.cloud.firestore.DocumentSnapshot;
 
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+import controllers.BoardController;
+import controllers.CharacterController;
 import controllers.GameController;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
+import models.BoardModel;
 import resources.supportingClasses.Buttons;
+import resources.supportingClasses.CharacterLocation;
 import shared.Observer;
 
 import java.io.FileNotFoundException;
@@ -57,17 +62,10 @@ public class GameView implements Observer, View {
 
         pane.getChildren().add(buttons.buttons());
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 39c4a6e56ba41037ce4d1bc5f553f44e4e0fc6a6
         return pane;
     }
 
     /**
-     *
-     *
      * @param x
      * @param y
      * @param button
@@ -75,7 +73,32 @@ public class GameView implements Observer, View {
      */
     public static void buttonClicked(int x, int y, Button button) {
         System.out.println("GameView/buttonClicked(" + x + ", " + y + ", " + button.getText() + ")");
+        //is character clicked
+        //Not yet implemented so temporary fix
+        int tempPlayerID = 0;
+
+        BoardController boardController = BoardController.getInstance();
+        BoardModel boardModel = BoardModel.getInstance();
+
+        CharacterLocation[] characterLocations = boardModel.getCharacterLocations();
+        for (int i = 0; i < characterLocations.length; i++) {
+            if (characterLocations[i] != null) {
+                if (x == characterLocations[i].getLocation().getX() && y == characterLocations[i].getLocation().getY()) {
+                    System.out.println("Character " + characterLocations[i].getCharacterID() + " is clicked!");
+                    boardController.characterClicked(i, tempPlayerID);
+                }
+            }
+        }
+
     }
+
+
+    //if clicked -> boardController
+
+    //Boardcontorller -> is bezet?
+    //character model == bezet
+    // op nieuw board lader
+
 
     @Override
     public void update() {

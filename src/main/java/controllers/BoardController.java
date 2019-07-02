@@ -3,6 +3,7 @@ package controllers;
 import com.google.cloud.firestore.DocumentSnapshot;
 import models.BoardModel;
 import resources.supportingClasses.Location;
+import views.GameView;
 import views.View;
 import resources.supportingClasses.MoveSet;
 
@@ -16,14 +17,15 @@ public class BoardController implements Controller {
     private BoardModel boardModel;
     private CharacterController characterController;
 
+
     /**
      * The Construnctor
      *
      * @author Carl Zee
      */
     private BoardController() {
-        boardController.boardModel = BoardModel.getInstance();
-        boardController.characterController = CharacterController.getInstance();
+        this.boardModel = BoardModel.getInstance();
+        this.characterController = CharacterController.getInstance();
     }
 
     /**
@@ -38,6 +40,7 @@ public class BoardController implements Controller {
             boardController = new BoardController();
         }
         return boardController;
+
     }
 
 
@@ -72,6 +75,7 @@ public class BoardController implements Controller {
      * @author Carl Zee
      */
     public void characterClicked(int characterID, int playerID) {
+        System.out.println("characterClicked( " + characterID + ", " + playerID + ")");
         characterController.characterClicked(characterID, playerID);
     }
 
