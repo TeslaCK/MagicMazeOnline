@@ -55,10 +55,20 @@ public class GameView implements Observer, View {
 
         pane.getChildren().add(buttons.buttons());
 
-
         return pane;
     }
 
+    /**
+     *
+     *
+     * @param x
+     * @param y
+     * @param buttonKind
+     * @author Carl Zee
+     */
+    public static void buttonClicked(int x, int y, String buttonKind) {
+        System.out.println("GameView/buttonClicked(" + x + ", " + y + ", " + buttonKind + ")");
+    }
 
     @Override
     public void update() {

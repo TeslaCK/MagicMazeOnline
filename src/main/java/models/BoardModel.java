@@ -89,19 +89,26 @@ public class BoardModel implements Model {
         this.board = boardReader.getBoard();
     }
 
-    public void setUpCharacterLocations() {
-        for (int y = 0; y < board.length; y++) {
-            for (int x = 0; x < board.length; x++) {
-                if (board[y][x] == STARTINGLOCATIONGREEN) {
+    public void setUpCharacterLocations(String filePath) {
+        int[][] characterBoard;
+        System.out.println("Character set up filePath: " + filePath);
+        BoardReader boardReader = new BoardReader(filePath);
+        characterBoard = boardReader.getBoard();
+
+        for (int y = 0; y < characterBoard.length; y++) {
+            for (int x = 0; x < characterBoard[y].length; x++) {
+                System.out.println("(" + x + ", " + y + ") = " + board[y][x]);
+                if (characterBoard[y][x] == STARTINGLOCATIONGREEN) {
                     characterLocations[GREENID] = new CharacterLocation(GREENID, new Location(x, y));
+                    System.out.println("GROEN!");
                 }
-                if (board[y][x] == STARTINGLOCATIONPURPLE) {
+                if (characterBoard[y][x] == STARTINGLOCATIONPURPLE) {
                     characterLocations[PURPLEID] = new CharacterLocation(PURPLEID, new Location(x, y));
                 }
-                if (board[y][x] == STARTINGLOCATIONGRED) {
+                if (characterBoard[y][x] == STARTINGLOCATIONGRED) {
                     characterLocations[REDID] = new CharacterLocation(REDID, new Location(x, y));
                 }
-                if (board[y][x] == STARTINGLOCATIONYELLOW) {
+                if (characterBoard[y][x] == STARTINGLOCATIONYELLOW) {
                     characterLocations[YELLOWID] = new CharacterLocation(YELLOWID, new Location(x, y));
                 }
             }
