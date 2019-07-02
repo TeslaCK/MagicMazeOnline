@@ -50,12 +50,16 @@ public class GameView implements Observer, View {
         //eruit
         PlayerView playerView = new PlayerView();
         BoardView boardView = new BoardView();
-//        , playerView.playerScoreAndRankingPane(), playerView.playerPane(), boardView.mainBoardPane()
 
         Buttons buttons = new Buttons();
+<<<<<<< HEAD
         pane.getChildren().add(buttons.createButtons());
 
 
+=======
+
+        pane.getChildren().add(buttons.buttons());
+>>>>>>> 57851803eba6e44d3aa7e13c6370c198cbf3ee00
 
 
         return pane;
