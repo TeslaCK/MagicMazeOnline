@@ -99,7 +99,7 @@ public class Buttons {
                             public void handle(ActionEvent event) {
                                 String idButton = tempButton.getId();
                                 Scanner scanner = new Scanner(idButton);
-                                GameView.buttonClicked(scanner.nextInt(), scanner.nextInt(), scanner.next());
+                                GameView.buttonClicked(scanner.nextInt(), scanner.nextInt(), tempButton);
                             }
                         });
                         int isCharacter = isCharacter(x, y);

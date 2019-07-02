@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34868645-64ea-4d68-86c3-13c315dca80b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/resources/images/groundTile.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/BoardModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/BoardModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/gameBoards/startingCharacters1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/gameBoards/startingCharacters1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/resources/supportingClasses/Buttons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/supportingClasses/Buttons.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/views/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/views/GameView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/BoardModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/BoardModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/resources/supportingClasses/Buttons.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/supportingClasses/Buttons.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/views/GameView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/GameView.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,18 +17,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/resources/supportingClasses/Buttons.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="72" column="57" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/resources/gameBoards/startingCharacters1.txt">
           <provider selected="true" editor-type-id="text-editor">
@@ -66,16 +46,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/views/GameView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="53" column="40" lean-forward="true" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
+            <state relative-caret-position="265">
+              <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/BoardModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
+            <state relative-caret-position="323">
               <caret line="110" column="34" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -89,6 +72,18 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-111">
               <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/resources/supportingClasses/Buttons.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="101" column="103" lean-forward="true" selection-start-line="101" selection-start-column="103" selection-end-line="101" selection-end-column="103" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -161,10 +156,10 @@
         <option value="$PROJECT_DIR$/src/main/java/resources/gameBoards/startingCharacters1" />
         <option value="$PROJECT_DIR$/src/main/java/resources/gameBoards/startingBoard1.txt" />
         <option value="$PROJECT_DIR$/src/main/java/configurations/Database.java" />
-        <option value="$PROJECT_DIR$/src/main/java/views/GameView.java" />
         <option value="$PROJECT_DIR$/src/main/java/resources/gameBoards/startingCharacters1.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/resources/supportingClasses/Buttons.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/BoardModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/views/GameView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resources/supportingClasses/Buttons.java" />
       </list>
     </option>
   </component>
@@ -415,12 +410,12 @@
       <workItem from="1561631973364" duration="11462000" />
       <workItem from="1561725597789" duration="334000" />
       <workItem from="1561902000536" duration="27956000" />
-      <workItem from="1562059220595" duration="6447000" />
+      <workItem from="1562059220595" duration="6800000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58400000" />
+    <option name="totallyTimeSpent" value="58753000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -825,16 +820,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resources/supportingClasses/Buttons.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="72" column="57" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/CharacterModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -858,6 +843,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/BoardModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="110" column="34" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/nl/hsleiden/iipsen16/MagicMaze/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -870,15 +865,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/views/GameView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="53" column="40" lean-forward="true" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
+        <state relative-caret-position="265">
+          <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/BoardModel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/supportingClasses/Buttons.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="110" column="34" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="34" />
+        <state relative-caret-position="197">
+          <caret line="101" column="103" lean-forward="true" selection-start-line="101" selection-start-column="103" selection-end-line="101" selection-end-column="103" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
