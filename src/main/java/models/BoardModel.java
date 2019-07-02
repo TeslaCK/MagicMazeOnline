@@ -89,18 +89,21 @@ public class BoardModel implements Model {
         this.board = boardReader.getBoard();
     }
 
+    /**
+     * This will set up characterLocations.
+     *
+     * @param filePath The filePath of the characterLocations
+     * @author Carl Zee
+     */
     public void setUpCharacterLocations(String filePath) {
         int[][] characterBoard;
-        System.out.println("Character set up filePath: " + filePath);
         BoardReader boardReader = new BoardReader(filePath);
         characterBoard = boardReader.getBoard();
 
         for (int y = 0; y < characterBoard.length; y++) {
             for (int x = 0; x < characterBoard[y].length; x++) {
-                System.out.println("(" + x + ", " + y + ") = " + board[y][x]);
                 if (characterBoard[y][x] == STARTINGLOCATIONGREEN) {
                     characterLocations[GREENID] = new CharacterLocation(GREENID, new Location(x, y));
-                    System.out.println("GROEN!");
                 }
                 if (characterBoard[y][x] == STARTINGLOCATIONPURPLE) {
                     characterLocations[PURPLEID] = new CharacterLocation(PURPLEID, new Location(x, y));
