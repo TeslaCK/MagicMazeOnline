@@ -4,6 +4,7 @@ import com.google.cloud.firestore.DocumentSnapshot;
 
 import controllers.GameController;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
@@ -56,11 +57,25 @@ public class GameView implements Observer, View {
 
         pane.getChildren().add(buttons.buttons());
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 39c4a6e56ba41037ce4d1bc5f553f44e4e0fc6a6
         return pane;
     }
 
+    /**
+     *
+     *
+     * @param x
+     * @param y
+     * @param button
+     * @author Carl Zee
+     */
+    public static void buttonClicked(int x, int y, Button button) {
+        System.out.println("GameView/buttonClicked(" + x + ", " + y + ", " + button.getText() + ")");
+    }
 
     @Override
     public void update() {
