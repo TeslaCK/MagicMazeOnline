@@ -6,7 +6,7 @@ package resources.supportingClasses;
 public class MoveSet {
 
     private Move[] moves;
-    private int numberOfMOves;
+    private int numberOfMoves;
 
     /**
      * Basic constructor
@@ -14,7 +14,7 @@ public class MoveSet {
      * @author Carl Zee
      */
     public MoveSet() {
-        numberOfMOves = 0;
+        numberOfMoves = 0;
     }
 
     /**
@@ -24,12 +24,13 @@ public class MoveSet {
      * @author Carl Zee
      */
     public void addMove(Move move) {
-        Move[] newMoves = new Move[this.numberOfMOves + 1];
-        for (int i = 0; i < this.numberOfMOves; i++) {
+        Move[] newMoves = new Move[this.numberOfMoves + 1];
+        for (int i = 0; i < this.numberOfMoves; i++) {
             newMoves[i] = this.moves[i];
         }
-        this.numberOfMOves = newMoves.length;
-        newMoves[numberOfMOves - 1] = move;
+        this.numberOfMoves = newMoves.length;
+        newMoves[numberOfMoves - 1] = move;
+        moves = newMoves;
     }
 
     /**
@@ -40,7 +41,7 @@ public class MoveSet {
      * @author Carl Zee
      */
     public Move getMove(int index) {
-        if (index >= 0 && index < numberOfMOves) {
+        if (index >= 0 && index < numberOfMoves) {
             return moves[index];
         }
         return null;
@@ -63,7 +64,7 @@ public class MoveSet {
      * @author Carl Zee
      */
     public int getNumberOfMoves() {
-        return numberOfMOves;
+        return numberOfMoves;
     }
 
     /**
@@ -73,6 +74,9 @@ public class MoveSet {
     public static MoveSet[] initializeStartingMoveSets(int totalPlayers) {
         if (totalPlayers > 1 && totalPlayers < 9) {
             MoveSet[] moveSets = new MoveSet[totalPlayers];
+            for (int i = 0; i < totalPlayers; i++) {
+                moveSets[i] = new MoveSet();
+            }
             switch (totalPlayers) {
                 case 2:
                     moveSets[0].addMove(Move.moveUp());

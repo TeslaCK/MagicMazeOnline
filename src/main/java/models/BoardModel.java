@@ -36,14 +36,14 @@ public class BoardModel implements Model {
     static BoardModel boardModel;
     private int[][] board; //board[y][x]
     CharacterLocation[] characterLocations = new CharacterLocation[TOTALCHARACTERS];
+    private int documentID;
 
     /**
      * Default Constructor
      *
      * @author Carl Zee
      */
-    public BoardModel() {
-
+    private BoardModel() {
     }
 
     /**
@@ -77,6 +77,28 @@ public class BoardModel implements Model {
     public void unregisterObserver(View v) {
         this.observers.remove(v);
     }
+
+    /**
+     * Setter for the documentID
+     *
+     * @param documentID The new value of the documentID.
+     * @author Carl Zee
+     */
+    public void setDocumentID(int documentID) {
+        this.documentID = documentID;
+    }
+
+
+    /**
+     * Getter for documentID
+     *
+     * @return Returns documentID.
+     * @author Carl Zee
+     */
+    public int getDocumentID() {
+        return documentID;
+    }
+
 
     /**
      * This method will load a board in.
@@ -126,9 +148,9 @@ public class BoardModel implements Model {
      */
     @Override
     public void notifyObservers(DocumentSnapshot ds) {
-        BoardModel boardModel = ds.toObject(BoardModel.class);
-        this.setBoard(boardModel.getBoard());
-        this.setCharacterLocations(boardModel.getCharacterLocations());
+        BoardModel tempBoardModel = ds.toObject(BoardModel.class);
+        this.setBoard(tempBoardModel.getBoard());
+        this.setCharacterLocations(tempBoardModel.getCharacterLocations());
         for (int i = 0; i < this.observers.size(); i++) {
             this.observers.get(i).update();
         }
@@ -162,9 +184,19 @@ public class BoardModel implements Model {
      * @author Carl Zee
      */
     public void setCharacterLocations(CharacterLocation[] characterLocations) {
-        for(int i = 0; i < TOTALCHARACTERS; i++) {
+        for (int i = 0; i < TOTALCHARACTERS; i++) {
             this.characterLocations[i] = characterLocations[i];
         }
+    }
+
+    /**
+     * The setter of a specific characterLocation
+     *
+     * @param characterID The id of the character that will be placed.
+     * @param location The new location of the character.
+     */
+    public void setCharacterLocation(int characterID, Location location) {
+        this.characterLocations[characterID].setLocation(location);
     }
 
     /**

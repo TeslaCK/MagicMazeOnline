@@ -4,6 +4,7 @@ package controllers;
 import com.google.cloud.firestore.DocumentSnapshot;
 import models.CharacterModel;
 import resources.supportingClasses.Location;
+import services.FirebaseService;
 import views.View;
 import resources.supportingClasses.MoveSet;
 
@@ -14,18 +15,51 @@ import resources.supportingClasses.MoveSet;
 public class CharacterController implements Controller {
 
     static CharacterController characterController;
-    CharacterModel characterModel;
-    BoardController boardController;
-    PlayerInGameController playerInGameController;
+    private CharacterModel characterModel;
+    private BoardController boardController;
+    private PlayerInGameController playerInGameController;
+    private LobbyController lobbyController;
+    private FirebaseService firebaseService;
+    private String documentID;
+    private String pathToCollection = "character";
 
     /**
      * Constructor
      */
-    public CharacterController() {
+    private CharacterController() {
         this.characterModel = CharacterModel.getInstance();
         this.boardController = BoardController.getInstance();
         this.playerInGameController = PlayerInGameController.getInstance();
+        this.lobbyController = LobbyController.getInstance();
+        setUpFireBase();
     }
+
+    /**
+     * Extra contructor that will be called from the BoardController
+     *
+     * @param boardController This will be the boardController
+     */
+    public CharacterController(BoardController boardController) {
+        this.characterModel = CharacterModel.getInstance();
+        this.playerInGameController = PlayerInGameController.getInstance();
+        this.boardController = boardController;
+        this.lobbyController = LobbyController.getInstance();
+        setUpFireBase();
+    }
+
+
+    /**
+     * Set's firebase up for this controller.
+     *
+     * @author Carl Zee
+     */
+    private void setUpFireBase() {
+        characterModel.setDocumentID(lobbyController.askLobbyModelID());
+        this.firebaseService = FirebaseService.getInstance();
+        this.documentID = String.valueOf(characterModel.getDocumentID());
+        firebaseService.listen(pathToCollection, documentID, this);
+    }
+
 
     /**
      * If you call CharacterController.getInstance() it guarantees there is only 1 instance.
@@ -55,7 +89,7 @@ public class CharacterController implements Controller {
     }
 
     /**
-     * This method registrated the oberservers.
+     * This method registered the observers.
      *
      * @param v The view that will be registered.
      * @author Carl Zee

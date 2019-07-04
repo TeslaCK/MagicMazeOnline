@@ -3,6 +3,7 @@ package controllers;
 import com.google.cloud.firestore.DocumentSnapshot;
 import models.BoardModel;
 import resources.supportingClasses.Location;
+import services.FirebaseService;
 import views.View;
 import resources.supportingClasses.MoveSet;
 
@@ -15,16 +16,35 @@ public class BoardController implements Controller {
     static BoardController boardController;
     private BoardModel boardModel;
     private CharacterController characterController;
+    FirebaseService firebaseService;
+    private String pathToCollection = "board";
+    private String documentID;
+    private LobbyController lobbyController;
 
     /**
-     * The Construnctor
+     * The Constructor
      *
      * @author Carl Zee
      */
     private BoardController() {
-        boardController.boardModel = BoardModel.getInstance();
-        boardController.characterController = CharacterController.getInstance();
+        this.boardModel = BoardModel.getInstance();
+        this.characterController = new CharacterController(this);
+        this.lobbyController = LobbyController.getInstance();
+        setUpFireBase();
     }
+
+    /**
+     * Set's firebase up for this controller.
+     *
+     * @author Carl Zee
+     */
+    private void setUpFireBase() {
+        boardModel.setDocumentID(lobbyController.askLobbyModelID());
+        this.firebaseService = FirebaseService.getInstance();
+        this.documentID = String.valueOf(boardModel.getDocumentID());
+        firebaseService.listen(pathToCollection, documentID, this);
+    }
+
 
     /**
      * If you call BoardController.getInstance() it guarantees there is only 1 instance.
@@ -124,6 +144,6 @@ public class BoardController implements Controller {
      * @author Carl Zee
      */
     public void characterLocationToFB(int characterID, Location location) {
-        //TODO implement here
+        boardModel.setCharacterLocation(characterID, location);
     }
 }

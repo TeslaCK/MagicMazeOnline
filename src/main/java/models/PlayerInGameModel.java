@@ -18,6 +18,7 @@ public class PlayerInGameModel implements Model {
     private List<View> observers = new ArrayList<View>();
     private int totalPlayers;
     private HashMap<Integer, MoveSet> moveSets; //<playerID,MoveSet>
+    private int documentID;
 
     /**
      * Constructor
@@ -49,6 +50,25 @@ public class PlayerInGameModel implements Model {
             playerInGameModel = new PlayerInGameModel();
         }
         return playerInGameModel;
+    }
+
+    /**
+     * Setter of documentID.
+     *
+     * @param documentID The new documentID.
+     * @author Carl Zee
+     */
+    public void setDocumentID(int documentID) {
+        this.documentID = documentID;
+    }
+
+    /**
+     * Getter of documentID.
+     *
+     * @return Returns documentID.
+     */
+    public int getDocumentID() {
+        return documentID;
     }
 
     /**

@@ -1,163 +1,163 @@
 package models;
 
-import java.io.FileNotFoundException;
-import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.List;
+
 import com.google.cloud.firestore.DocumentSnapshot;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Alert.AlertType;
+import com.google.cloud.firestore.annotation.Exclude;
+
+import controllers.GameController;
+import controllers.LobbyController;
+import controllers.SceneManager;
 import javafx.stage.Stage;
 import shared.Observable;
-import shared.Observer;
-import views.CreateOrJoinLobbyView;
+import views.AlertView;
 import views.View;
 
 /**
- *
- * @author C.K
+ * @author CK
  */
 public class GameModel implements Observable, Model {
+	@Exclude
 	private List<View> observers = new ArrayList<View>();
-	private ArrayList<PlayerModel> playerModels =  new ArrayList<PlayerModel>();
-	private PlayerModel currentPlayer = new PlayerModel("vegeto", "ultra");
-	private int id;
-	private String state;
-	
-	
+
+	@Exclude
+	private SceneManager sceneManager = new SceneManager();
+
+	@Exclude
+	private PlayerModel currentPlayer;
+
+	public Integer id;
+	public List<PlayerModel> playersInGame = new ArrayList<>();
+	public boolean readyToStartGame = false;
+
 	public GameModel() {
 	}
-	
+
+	public void setId(int id) {
+		this.id = id;
+	}
 
 	public void registerObserver(View v) {
 		this.observers.add(v);
 	}
 
-	
 	public void unregisterObserver(View v) {
 		this.observers.remove(v);
-		
+
 	}
 
-	
 	public void notifyObservers(DocumentSnapshot ds) {
-		// Notify views of model update
-//		for (View o : observers) {
-//			o.update();
-//		}		
+		GameModel newGame = ds.toObject(GameModel.class);
+
+		this.id = newGame.id;
+		this.playersInGame = newGame.playersInGame;
+		this.readyToStartGame = newGame.readyToStartGame;
+
+		updateCurrentPlayer();
+
+		for (View o : observers) {
+			o.update();
+		}
 	}
 
+	public boolean getReadyToStartGame() {
+		return readyToStartGame;
+	}
+
+	public void setReadyToStartGame(boolean readyToStartGame) {
+		this.readyToStartGame = readyToStartGame;
+	}
+
+	@Exclude
+	public List<PlayerModel> getPlayerModels() {
+		return this.playersInGame;
+	}
 
 	public void playerAtTurn() {
-		
+
 	}
-	
-	
+
+
+	public void loginPlayer(String username, String password, Stage ps, List<PlayerModel> players, GameController gc, LobbyController lc) {
+		for (PlayerModel player : players) {
+			if (!((username.contentEquals(player.getUsername()) && password.contentEquals(player.getPassword())))) {
+				continue;
+			} else {
+
+				sceneManager.changeToCreateOrJoinLobbyView(ps, null, null);
+				return;
+			}
+		}
+		AlertView a = new AlertView();
+		a.alert("Could not find valid login!");
+	}
+
+
+	@Exclude
 	public PlayerModel getCurrentPlayer() {
 		return currentPlayer;
 	}
 
 
+	@Exclude
 	public void setCurrentPlayer(PlayerModel currentPlayer) {
 		this.currentPlayer = currentPlayer;
 	}
 
 
-	public void handleLogin(String username, String password, Stage primaryStage) throws FileNotFoundException, MalformedURLException {
-		if (username.isEmpty() || password.isEmpty()) {
-    		Alert alert = new Alert(AlertType.INFORMATION);
-    		alert.setTitle("Oops!");
-    		alert.setHeaderText(null);
-    		alert.setContentText("It seems you got incorrect credentials!");
-    		alert.showAndWait();
-    	} 
-		else {
-			for (int i = 0; i < playerModels.size(); i++) {
-				String username1=playerModels.get(i).getUsername();
-				String password1=playerModels.get(i).getPassword();
-				if(username.equals(username1) == true) {
-					if(password.equals(password1) == true) {
-					  CreateOrJoinLobbyView createOrJoinLobbyView = new CreateOrJoinLobbyView(primaryStage);
-						createOrJoinLobbyView.loadPrimaryStageWithPane(primaryStage);
-					}
-				  }
-				  else {
-					  Alert alert = new Alert(AlertType.INFORMATION);
-			    		alert.setTitle("Oops!");
-			    		alert.setHeaderText(null);
-			    		alert.setContentText("It seems you got incorrect credentials!");
-			    		alert.showAndWait();
-			    		return; 
-				  }
-			}
-		
-		}
-		
-		
-		}
-		
+	public void loadPlayersInTheGame(List<PlayerModel> listOfPlayersFromLobby) {
+		this.playersInGame = listOfPlayersFromLobby;
+	}
 
-	public void registerPlayer(String username, String password) {
-		if (username.isEmpty() || password.isEmpty()) {
-    		Alert alert = new Alert(AlertType.INFORMATION);
-    		alert.setTitle("Oops!");
-    		alert.setHeaderText(null);
-    		alert.setContentText("It seems you didn't enter valid credentials!");
-    		alert.showAndWait();
-    	} 
-		else {
-			for (int i = 0; i < playerModels.size(); i++) {
-				String username1=playerModels.get(i).getUsername();
-				  if(username.equals(username1) == true) {
-					  Alert alert = new Alert(AlertType.INFORMATION);
-			    		alert.setTitle("Oops!");
-			    		alert.setHeaderText(null);
-			    		alert.setContentText("It seems that this username is already taken!");
-			    		alert.showAndWait();
-			    		return;
-			    		}
-				  PlayerModel v = new PlayerModel(username, password);		
-					this.playerModels.add(v);
-				  
-					  
-				  
-				  }
-		
+
+	public void removePlayerFromGame(PlayerModel player) {
+		int index = -1;
+		int indexOfPlayerToBeRemoved = 0;
+
+		for (PlayerModel playerToremove : this.playersInGame) {
+			index++;
+
+			if (playerToremove.getUsername().equals(player.getUsername())) {
+				indexOfPlayerToBeRemoved = index;
 			}
 		}
-	
-	
-	public void loginPlayer() {
-		
+
+		this.playersInGame.remove(indexOfPlayerToBeRemoved);
 	}
-	
-	
-	public void loadGame() {
-		
+
+	public void addPlayerToGame(PlayerModel player) {
+
+		this.playersInGame.add(player);
 	}
-	
-	
-	public void updateGame() {
-		
+
+
+	private void updateCurrentPlayer() {
+		for (PlayerModel player : this.playersInGame) {
+			if (this.currentPlayer.id == player.id) {
+				this.currentPlayer.score = player.score;
+			}
+		}
 	}
-	
-	
-	public void endGame() {
-		
+
+
+	public List<PlayerModel> filterOutCurrentPlayerFromPlayersInGame(List<PlayerModel> listOfPlayersInGame,
+																	 PlayerModel player) {
+		int index = -1;
+		int indexOfPlayerToBeRemoved = 0;
+
+		for (PlayerModel playerToremove : listOfPlayersInGame) {
+			index++;
+
+			if (playerToremove.id == player.id) {
+				indexOfPlayerToBeRemoved = index;
+			}
+		}
+
+		listOfPlayersInGame.remove(indexOfPlayerToBeRemoved);
+
+		return listOfPlayersInGame;
 	}
-	
-	
-	public void changeTurn() {
-		
-	}
-	
-	
-	public void getFirebaseService() {
-		
-	}
-	
-	
-	public void setFirebaseService() {
-		
-	}
+
+
 }

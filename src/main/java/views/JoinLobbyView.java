@@ -1,55 +1,42 @@
 package views;
 
-import com.google.cloud.firestore.DocumentSnapshot;
-
+import controllers.GameController;
 import controllers.LobbyController;
 import controllers.SceneManager;
-import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.layout.Border;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.BorderStroke;
-import javafx.scene.layout.BorderStrokeStyle;
-import javafx.scene.layout.BorderWidths;
-import javafx.scene.layout.ColumnConstraints;
-import javafx.scene.layout.CornerRadii;
-import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
-import javafx.scene.layout.RowConstraints;
-import javafx.scene.layout.VBox;
-import javafx.scene.paint.Color;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import models.LobbyModel;
 
-import java.io.FileNotFoundException;
-import java.net.MalformedURLException;
-
 /**
- * @author C.K
+ * @author CK
  */
 public class JoinLobbyView implements View {
     private LobbyController lobbyController;
     private Stage primaryStage;
     private SceneManager sceneManager;
+    private LobbyModel lobby;
+    private GameController gameController;
+
     int screenWidth = (int) Screen.getPrimary().getBounds().getWidth();
     int screenHeight = (int) Screen.getPrimary().getBounds().getHeight();
 
     Image image = new Image("/images/logo.png");
 
-    public JoinLobbyView(Stage primaryStage) {
+    public JoinLobbyView(Stage primaryStage, GameController gameController, LobbyController lobbyController) {
         this.primaryStage = primaryStage;
+        this.gameController = gameController;
+        this.lobbyController = lobbyController;
         this.sceneManager = new SceneManager();
-        this.lobbyController = new LobbyController();
-    }
 
+    }
 
     public void update() {
 
@@ -60,10 +47,10 @@ public class JoinLobbyView implements View {
         return this.primaryStage;
     }
 
-
     public Stage loadPrimaryStageWithPane(Stage primaryStage) {
         this.primaryStage = primaryStage;
         Scene scene = new Scene(this.createMainPane(), screenWidth, screenHeight);
+
         primaryStage.setTitle("join a lobby");
         primaryStage.setScene(scene);
         primaryStage.show();
@@ -71,10 +58,9 @@ public class JoinLobbyView implements View {
         return primaryStage;
     }
 
-
     BorderPane createMainPane() {
         BorderPane bPane = new BorderPane();
-        bPane.setCenter(this.createJoinLobby());
+
         ImageView imageViewleft = new ImageView();
         imageViewleft.setImage(new Image("/images/left.png"));
 
@@ -84,31 +70,35 @@ public class JoinLobbyView implements View {
         imageViewleft.setFitHeight(screenHeight);
         imageViewright.setFitHeight(screenHeight);
 
+
+        bPane.setId("background");
+
         bPane.setCenter(this.createJoinLobby());
 
         bPane.setLeft(imageViewleft);
         bPane.setRight(imageViewright);
+
         return bPane;
     }
 
 
     private Pane createJoinLobby() {
+        ImageView iv2 = new ImageView();
         Pane pane = new Pane();
-        Label labelLobbyID = new Label("Lobby ID: ");
+        Label labelLobbyID = new Label("Lobby id:");
+        labelLobbyID.setStyle("-fx-background-color: #CCCCFF; -fx-text-fill: white; -fx-font-size: 20;");
         TextField textFieldLobbyID = new TextField();
         Button joinButton = new Button("join");
         Button backButton = new Button("back");
 
-        textFieldLobbyID.setStyle("-fx-text-fill: green; -fx-text-fill: black; -fx-font-size: 20;");
-        labelLobbyID.setStyle("-fx-font-size: 20");
+        joinButton.setOnAction(e -> this.lobbyController.joinLobby(primaryStage, textFieldLobbyID.getText(), this.gameController, this.lobbyController));
+        backButton.setOnAction(e -> this.sceneManager.changeToCreateOrJoinLobbyView(this.getPrimaryStage(), this.gameController, this.lobbyController));
 
-        joinButton.setOnAction(e -> {
-            String valueOfTextField = textFieldLobbyID.getText();
-            this.lobbyController.joinLobby(this.primaryStage, valueOfTextField);
-        });
+        joinButton.setStyle("-fx-background-color: #CCCCFF; -fx-text-fill: white; -fx-font-size: 20;");
+        backButton.setStyle("-fx-background-color: #CCCCFF; -fx-text-fill: white; -fx-font-size: 20;");
 
         pane.setMaxSize(750, 500);
-        pane.setBorder(new Border(new BorderStroke(Color.BLACK, BorderStrokeStyle.SOLID, new CornerRadii(10), new BorderWidths(2))));
+
         textFieldLobbyID.setMaxWidth(200);
         joinButton.setPrefSize(100, 25);
         backButton.setPrefSize(100, 25);
@@ -121,35 +111,14 @@ public class JoinLobbyView implements View {
         backButton.setTranslateY(350);
         joinButton.setTranslateX(555);
         joinButton.setTranslateY(350);
-        backButton.setOnAction(e -> {
-            try {
-                this.sceneManager.switchToCreateOrJoinLobbyView(this.getPrimaryStage());
-            } catch (FileNotFoundException ex) {
-                ex.printStackTrace();
-            } catch (MalformedURLException ex) {
-                ex.printStackTrace();
-            }
-        });
 
-        pane.setMaxSize(screenWidth, screenHeight);
-        textFieldLobbyID.setMaxWidth(200);
-        joinButton.setPrefSize(200, 50);
-        backButton.setPrefSize(200, 50);
+        iv2.setImage(image);
+        iv2.setFitWidth(500);
+        iv2.setPreserveRatio(true);
+        iv2.setSmooth(true);
+        iv2.setCache(false);//todo tmp off
 
-        joinButton.setStyle("-fx-background-color: #CCCCFF; -fx-text-fill: white; -fx-font-size: 20;");
-        backButton.setStyle("-fx-background-color: #CCCCFF; -fx-text-fill: white; -fx-font-size: 20;");
-
-
-        labelLobbyID.setTranslateX(450);
-        labelLobbyID.setTranslateY(400);
-        textFieldLobbyID.setTranslateX(550);
-        textFieldLobbyID.setTranslateY(397);
-        backButton.setTranslateX(320);
-        backButton.setTranslateY(550);
-        joinButton.setTranslateX(755);
-        joinButton.setTranslateY(550);
-
-        pane.getChildren().addAll(labelLobbyID, textFieldLobbyID, joinButton, backButton);
+        pane.getChildren().addAll(iv2, labelLobbyID, textFieldLobbyID, joinButton, backButton);
 
         return pane;
     }

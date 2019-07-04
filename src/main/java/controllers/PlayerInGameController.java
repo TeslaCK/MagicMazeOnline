@@ -3,6 +3,7 @@ package controllers;
 import com.google.cloud.firestore.DocumentSnapshot;
 import models.PlayerInGameModel;
 import resources.supportingClasses.MoveSet;
+import services.FirebaseService;
 import views.View;
 
 /**
@@ -12,14 +13,35 @@ import views.View;
  */
 public class PlayerInGameController implements Controller{
 
-    static PlayerInGameController playerInGameController;
-    PlayerInGameModel playerInGameModel;
+    private static PlayerInGameController playerInGameController;
+    private PlayerInGameModel playerInGameModel;
+    private LobbyController lobbyController;
+    private FirebaseService firebaseService;
+    private static String pathToCollection = "playerInGame";
+    private String documentID;
 
     /**
      * Constructor
+     *
+     * @author Carl Zee
      */
     private PlayerInGameController() {
         this.playerInGameModel = PlayerInGameModel.getInstance();
+        setUpFireBase();
+    }
+
+
+    /**
+     * Set's firebase up for this controller.
+     *
+     * @author Carl Zee
+     */
+    private void setUpFireBase() {
+        this.lobbyController = LobbyController.getInstance();
+        playerInGameModel.setDocumentID(lobbyController.askLobbyModelID());
+        this.firebaseService = FirebaseService.getInstance();
+        this.documentID = String.valueOf(playerInGameModel.getDocumentID());
+        firebaseService.listen(pathToCollection, documentID, this);
     }
 
     /**
