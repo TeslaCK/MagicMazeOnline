@@ -50,7 +50,10 @@ public class Buttons {
     Buttons mogen iets groter       -> Button resize                        GED
     Afbeeldingen                    -> Afbeeldingen toevoegen aan buttons
     Kan worden ingedrukt lijntje    -> Clickable buttons zichbaarder maken door bijv en randje
+<<<<<<< HEAD
 
+=======
+>>>>>>> 13af1e31debe90cf945530fcb81d18166654c81f
      */
     //Path of the gameBoard and characterLocations
     private final String BOARDPATH = "src\\main\\java\\resources\\gameBoards\\startingBoard1.txt";

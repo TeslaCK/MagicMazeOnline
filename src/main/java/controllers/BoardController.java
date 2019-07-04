@@ -3,7 +3,11 @@ package controllers;
 import com.google.cloud.firestore.DocumentSnapshot;
 import models.BoardModel;
 import resources.supportingClasses.Location;
+<<<<<<< HEAD
 import views.GameView;
+=======
+import services.FirebaseService;
+>>>>>>> 13af1e31debe90cf945530fcb81d18166654c81f
 import views.View;
 import resources.supportingClasses.MoveSet;
 
@@ -16,15 +20,23 @@ public class BoardController implements Controller {
     static BoardController boardController;
     private BoardModel boardModel;
     private CharacterController characterController;
+<<<<<<< HEAD
     private PlayerInGameController playerInGameController;
 
+=======
+    FirebaseService firebaseService;
+    private String pathToCollection = "board";
+    private String documentID;
+    private LobbyController lobbyController;
+>>>>>>> 13af1e31debe90cf945530fcb81d18166654c81f
 
     /**
-     * The Construnctor
+     * The Constructor
      *
      * @author Carl Zee
      */
     private BoardController() {
+<<<<<<< HEAD
         initialiseVariables();
     }
 
@@ -36,7 +48,26 @@ public class BoardController implements Controller {
         this.boardModel = boardModel.getInstance();
         this.characterController = new CharacterController(this);
         this.playerInGameController = new PlayerInGameController();
+=======
+        this.boardModel = BoardModel.getInstance();
+        this.characterController = new CharacterController(this);
+        this.lobbyController = LobbyController.getInstance();
+        setUpFireBase();
+>>>>>>> 13af1e31debe90cf945530fcb81d18166654c81f
     }
+
+    /**
+     * Set's firebase up for this controller.
+     *
+     * @author Carl Zee
+     */
+    private void setUpFireBase() {
+        boardModel.setDocumentID(lobbyController.askLobbyModelID());
+        this.firebaseService = FirebaseService.getInstance();
+        this.documentID = String.valueOf(boardModel.getDocumentID());
+        firebaseService.listen(pathToCollection, documentID, this);
+    }
+
 
     /**
      * If you call BoardController.getInstance() it guarantees there is only 1 instance.
@@ -137,6 +168,6 @@ public class BoardController implements Controller {
      * @author Carl Zee
      */
     public void characterLocationToFB(int characterID, Location location) {
-        //TODO implement here
+        boardModel.setCharacterLocation(characterID, location);
     }
 }

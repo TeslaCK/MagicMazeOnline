@@ -1,57 +1,57 @@
 package controllers;
 
-import javafx.stage.Stage;
 import models.LobbyModel;
-import views.CreateOrJoinLobbyView;
-import views.GameView;
-import views.JoinLobbyView;
-import views.LobbyView;
-
-import java.io.FileNotFoundException;
-import java.net.MalformedURLException;
-//import views.PlayCardXTimesView;
+import javafx.stage.Stage;
+import views.*;
+import views.LobbyManagerView;
 
 
 /**
- * @author C.K
+ * @author CK
  */
 public class SceneManager {
-
 
 	public SceneManager() {
 	}
 
 
-	public Stage switchToGameView(Stage primaryStage) {
-		GameView gameView = new GameView(primaryStage);
+	public Stage changeToGameView(Stage primaryStage, GameController gameController) {
+		GameView gameView = new GameView(primaryStage, gameController);
 		gameView.loadPrimaryStageWithPane(primaryStage);
 
 		return primaryStage;
 	}
 
 
-	public Stage switchToLobbyView(Stage primaryStage, LobbyModel lobby, String lobbyDocumentId) {
-		LobbyView lobbyView = new LobbyView(primaryStage, lobby, lobbyDocumentId);
+	public Stage changeToLobbyView(Stage primaryStage, LobbyModel lobby, String documentID, GameController gameController, LobbyController lobbyController) {
+		LobbyView lobbyView = new LobbyView(primaryStage, lobby, documentID, gameController, lobbyController);
 		lobbyView.loadPrimaryStageWithPane(primaryStage);
 
 		return primaryStage;
 	}
 
 
-	public Stage switchToJoinLobbyView(Stage primaryStage) {
-		JoinLobbyView joinLobbyView = new JoinLobbyView(primaryStage);
+	public Stage changeToJoinLobbyView(Stage primaryStage, GameController gameController, LobbyController lobbyController) {
+		JoinLobbyView joinLobbyView = new JoinLobbyView(primaryStage, gameController, lobbyController);
 		joinLobbyView.loadPrimaryStageWithPane(primaryStage);
 
 		return primaryStage;
 	}
 
 
-	public Stage switchToCreateOrJoinLobbyView(Stage primaryStage) throws FileNotFoundException, MalformedURLException {
-		CreateOrJoinLobbyView createOrJoinLobbyView = new CreateOrJoinLobbyView(primaryStage);
-		createOrJoinLobbyView.loadPrimaryStageWithPane(primaryStage);
+	public Stage changeToCreateOrJoinLobbyView(Stage primaryStage, GameController gameController, LobbyController lobbyController) {
+		LobbyManagerView lobbyManagerView = new LobbyManagerView(primaryStage, gameController, lobbyController);
+		lobbyManagerView.loadPrimaryStageWithPane(primaryStage);
 
 		return primaryStage;
 	}
 
+
+	public Stage changeToLoginView(Stage primaryStage) {
+		LoginView loginView = new LoginView(primaryStage);
+		loginView.loadPrimaryStageWithPane(primaryStage);
+
+		return primaryStage;
+	}
 
 }

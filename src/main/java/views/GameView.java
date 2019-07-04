@@ -30,7 +30,7 @@ public class GameView implements Observer, View {
     //gameboard controller
 
 
-    public GameView(Stage primaryStage) {
+    public GameView(Stage primaryStage, GameController gameController) {
         this.gameController = new GameController();
         this.primaryStage = primaryStage;
     }
@@ -54,8 +54,6 @@ public class GameView implements Observer, View {
     private Pane createMainPane() {
         Pane pane = new Pane();
         //eruit
-        PlayerView playerView = new PlayerView();
-        BoardView boardView = new BoardView();
 
         Buttons buttons = new Buttons();
 
@@ -66,9 +64,17 @@ public class GameView implements Observer, View {
     }
 
     /**
+<<<<<<< HEAD
      * @param x
      * @param y
      * @param button
+=======
+     * If a button is clicked it will call this function who notifies the boardcontroller.
+     *
+     * @param x The x coordinate of the button.
+     * @param y The y coordinate of the button.
+     * @param button The button that is clicked
+>>>>>>> 13af1e31debe90cf945530fcb81d18166654c81f
      * @author Carl Zee
      */
     public static void buttonClicked(int x, int y, Button button) {

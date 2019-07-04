@@ -28,6 +28,7 @@ public class CharacterModel implements Model {
 
     // <characterID, playerID> if occupied, <characterID, ISNOTOCCUPIED> if it isn't occupied
     private HashMap<Integer, Integer> characters;
+    private int documentID;
 
     /**
      * Constructor
@@ -55,6 +56,26 @@ public class CharacterModel implements Model {
             characterModel = new CharacterModel();
         }
         return characterModel;
+    }
+
+    /**
+     * The setter for documentID.
+     *
+     * @param documentID The new value of documentID.
+     * @author Carl Zee
+     */
+    public void setDocumentID(int documentID) {
+        this.documentID = documentID;
+    }
+
+    /**
+     * The getter of DocumentID.
+     *
+     * @return Returns documentID.
+     * @author Carl Zee
+     */
+    public int getDocumentID() {
+        return documentID;
     }
 
     /**
