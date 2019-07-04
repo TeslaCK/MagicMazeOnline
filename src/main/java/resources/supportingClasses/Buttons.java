@@ -107,7 +107,7 @@ public class Buttons {
                 switch (boardArray[y][x]) {
                     case 0:
                         tempButton = new Button("0");
-                        tempButton.setEffect(borderGlow);
+                        // tempButton.setEffect(borderGlow); //TODO implement borderGlow when necessary.
                         tempButton.setStyle(TILESTYLEGROUND);
 
                         int isCharacter = isCharacter(x, y);
@@ -178,7 +178,7 @@ public class Buttons {
                         Scanner scanner = new Scanner(idButton);
                         GameView.buttonClicked(scanner.nextInt(), scanner.nextInt(), finalTempButton);
                         System.out.println("yes");
-                        
+
 
                     }
                 });
