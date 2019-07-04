@@ -96,6 +96,8 @@ public class Buttons {
         for (int y = 0; y < boardArray.length; y++) {
             for (int x = 0; x < boardArray[y].length; x++) {
                 Button tempButton;
+
+
                 switch (boardArray[y][x]) {
                     case 0:
                         tempButton = new Button("0");
@@ -121,6 +123,7 @@ public class Buttons {
                     case 1:
                         tempButton = new Button("1");
                         tempButton.setStyle(TILESTYLEDOOR);
+
                         break;
                     case 2:
                         tempButton = new Button("2");

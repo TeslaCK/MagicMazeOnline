@@ -18,7 +18,7 @@ public class PlayerInGameController implements Controller{
     /**
      * Constructor
      */
-    private PlayerInGameController() {
+    public PlayerInGameController() {
         this.playerInGameModel = PlayerInGameModel.getInstance();
     }
 

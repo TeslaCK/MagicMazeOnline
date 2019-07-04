@@ -21,7 +21,22 @@ public class CharacterController implements Controller {
     /**
      * Constructor
      */
-    public CharacterController() {
+    private CharacterController() {
+        initialiseVariables();
+    }
+
+    public CharacterController(BoardController boardController) {
+        this.boardController = boardController;
+        this.characterModel = CharacterModel.getInstance();
+        this.playerInGameController = PlayerInGameController.getInstance();
+    }
+
+    /**
+     * Fix for getInstance()
+     *
+     * @author Carl Zee
+     */
+    public void initialiseVariables() {
         this.characterModel = CharacterModel.getInstance();
         this.boardController = BoardController.getInstance();
         this.playerInGameController = PlayerInGameController.getInstance();

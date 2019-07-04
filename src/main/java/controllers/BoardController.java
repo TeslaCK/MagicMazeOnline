@@ -16,6 +16,7 @@ public class BoardController implements Controller {
     static BoardController boardController;
     private BoardModel boardModel;
     private CharacterController characterController;
+    private PlayerInGameController playerInGameController;
 
 
     /**
@@ -24,8 +25,17 @@ public class BoardController implements Controller {
      * @author Carl Zee
      */
     private BoardController() {
-        this.boardModel = BoardModel.getInstance();
-        this.characterController = CharacterController.getInstance();
+        initialiseVariables();
+    }
+
+    /**
+     * Initialising variables, fixing getInstance error.
+     * @author Carl Zee
+     */
+    private void initialiseVariables() {
+        this.boardModel = boardModel.getInstance();
+        this.characterController = new CharacterController(this);
+        this.playerInGameController = new PlayerInGameController();
     }
 
     /**
@@ -40,7 +50,6 @@ public class BoardController implements Controller {
             boardController = new BoardController();
         }
         return boardController;
-
     }
 
 
